@@ -1,0 +1,54 @@
+// Calendar
+.o_calendar_container .o_calendar_sidebar_container .ui-datepicker table .ui-state-active {
+    background: none;
+    background-color: $o-brand-odoo !important;
+    color: #ffffff !important;
+}
+
+.o_calendar_container .o_calendar_sidebar_container .ui-datepicker table .ui-state-default {
+    color: $o-brand-odoo;
+}
+
+.datepicker {
+    .table-sm {
+        >thead {
+            color: white;
+            background-color: $o-brand-odoo;
+            >tr {
+                &:first-child {
+                    th:hover {
+                        color: white;
+                        background-color: darken($o-brand-odoo, 10%);
+                    }
+                }
+                &:last-child {
+                    color: $o-datepicker-week-color;
+                    background-color: $o-datepicker-week-bg-color;
+                }
+                >th {
+                    border-radius: 0;
+                }
+            }
+        }
+        >tbody {
+            >tr {
+                >td {
+                    &.active,
+                    .active {
+                        background-color: $o-brand-primary;
+                        border-radius: 100px;
+                    }
+                    &.today:before {
+                        border-bottom-color: $o-brand-primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.datepicker .table-sm>tbody>tr>td.active,
+.datepicker .table-sm>tbody>tr>td .active {
+    background-color: $o-brand-odoo;
+    border-radius: 0;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <record id="assign_wizard_view" model="ir.ui.view">
+            <field name="name">assign</field>
+            <field name="model">vit.assign_wizard</field>
+            <field name="arch" type="xml">
+                <form string="assign">
+
+                    <group>
+                        <field name="efaktur_id" domain="[('is_used','=',False)]"/>
+                        <field name="invoice_ids"/>
+                    </group>
+
+                    <footer>
+                        <button string="Confirm" icon="fa-check-circle" name="confirm_button" type="object" class="btn-primary"/>
+                        <button string="Cancel" icon="fa-times" class="btn-default" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+        <act_window id="assign_wizard_action"
+            name="Assign E-Faktur"
+            src_model="account.invoice"
+            res_model="vit.assign_wizard"
+            view_type="form" view_mode="form"
+            key2="client_action_multi" target="new"
+            />
+    
+    </data>
+</openerp>

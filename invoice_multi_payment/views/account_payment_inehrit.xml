@@ -1,0 +1,140 @@
+<openerp>
+	<data> 
+		<!--supplier/customer payment-->
+        <record model="ir.ui.view" id="view_account_payment_pivot">
+            <field name="name">account.payment.pivot</field>
+            <field name="model">account.payment</field>
+            <field name="arch" type="xml">
+                <pivot string="Payments" display_quantity="true">
+                    <field name="amount" type="measure"/>                    
+                </pivot>
+            </field>
+        </record>
+
+        <record id="account.action_account_payments" model="ir.actions.act_window">
+            <field name="name">Payments</field>
+            <field name="res_model">account.payment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,graph,pivot</field>
+            <field name="context">{'default_payment_type': 'inbound', 'default_partner_type': 'customer', 'search_default_inbound_filter': 1}</field>
+            <field name="domain">[]</field>
+            <field name="view_id" ref="account.view_account_payment_tree"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  Register a payment
+                </p><p>
+                  Payments are used to register liquidity movements. You can process those payments by your own means or by using installed facilities.
+                </p>
+            </field>
+        </record>
+
+        <record id="account.action_account_payments_payable" model="ir.actions.act_window">
+            <field name="name">Payments</field>
+            <field name="res_model">account.payment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,graph,pivot</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier', 'search_default_outbound_filter': 1}</field>
+            <field name="domain">[]</field>
+            <field name="view_id" ref="account.view_account_supplier_payment_tree"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  Register a payment
+                </p><p>
+                  Payments are used to register liquidity movements. You can process those payments by your own means or by using installed facilities.
+                </p>
+            </field>
+        </record>
+
+        <record id="account.action_account_payments_transfer" model="ir.actions.act_window">
+            <field name="name">Internal Transfers</field>
+            <field name="res_model">account.payment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,graph,pivot</field>
+            <field name="context">{'default_payment_type': 'transfer', 'search_default_transfers_filter': 1}</field>
+            <field name="domain">[]</field>
+            <field name="view_id" ref="account.view_account_supplier_payment_tree"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  Register a payment
+                </p><p>
+                  Payments are used to register liquidity movements. You can process those payments by your own means or by using installed facilities.
+                </p>
+            </field>
+        </record>
+
+    	<record model="ir.ui.view" id="account_payment_form_inherit_imp">
+            <field name="name">account.payment.imp.form</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_form"/>
+            <field name="arch" type="xml">
+                <field name="payment_type" position="after">
+                    <field name="method_type"/>
+                </field>
+                <field name="payment_date" position="after">
+                    <field name="move_name"/>
+                    <field name="currency_option"
+                        options="{'no_create': True}"/>
+                    <field name="invoice_list"/>
+                </field>
+            	 <field name="journal_id" position="after">
+                    <field name="document_id" widget="binary" 
+                        height="64" filename="document_id_name"/>
+                    <field name="document_id_name" invisible="1"/>
+            	 	<field name="is_charge"/>
+                    <field name="bank_charges"
+                        attrs="{'invisible': [('is_charge', '=', False)]}"/>
+            	 	<field name="bank_charges_account_id"
+                        attrs="{'invisible': [('is_charge', '=', False)]}"/>
+            	 </field>
+				 <xpath expr="//group" position="after">
+					<notebook> 
+						<page string="Invoice Lines" attrs="{'invisible': [('invoice_lines', '=', False)]}">
+							<button name="update_invoice_lines" string="Update Invoice" type="object" class="btn-primary" attrs="{'invisible':[('state', '=', 'posted')]}"/>  
+							<field name="invoice_lines" attrs="{'readonly':[('state', '!=', 'draft')]}">
+								<tree create="false" editable="bottom">
+									<field name="invoice_id" invisible="1"/>
+									<field name="account_id" invisible="1"/>
+									<field name="invoice" readonly="1"/> 
+									<field name="date" readonly="True"/> 
+									<field name="due_date" readonly="True"/>
+									<field name="total_amount" readonly="True" sum="Total Amount"/> 
+									<field name="open_amount" readonly="True" sum="Due Amount"/> 
+									<field name="allocation" sum="Allocated Amount"/>
+								</tree>
+								<form string="Invoice" create="false">
+									<group>
+										<field name="invoice_id" invisible="1"/>
+										<field name="invoice"/> 
+										<field name="date" readonly="True"/>  
+										<field name="due_date" readonly="True"/>
+										<field name="total_amount" readonly="True"/> 
+										<field name="open_amount" readonly="True"/> 
+										<field name="allocation" />
+									</group>
+								</form>
+							</field>
+						</page> 
+                        <page string="Other Information">
+                            <group>
+                                <group>
+                                    <field name="from_text"
+                                        attrs="{'invisible': [('payment_type', '!=', 'inbound')]}"/>
+                                    <field name="to_text"
+                                        attrs="{'invisible': [('payment_type', '!=', 'inbound')]}"/>
+                                    <field name="check_no"/>
+                                    <field name="bank_account_id"
+                                        options="{'no_create': True}"
+                                        attrs="{'invisible': [('payment_type', '!=', 'outbound')]}"/>
+                                </group>
+                                <group>                                    
+                                    <field name="office_selection"/>
+                                    <field name="new_description"/>
+                                </group>
+                            </group>
+                        </page>
+					</notebook> 
+				</xpath> 
+			</field>
+    	</record>  
+	</data>
+</openerp>

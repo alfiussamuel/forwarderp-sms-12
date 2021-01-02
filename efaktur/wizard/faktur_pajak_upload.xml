@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+	    <!-- Import Inventory Wizard form -->
+	    <record id="view_upload_efaktur" model="ir.ui.view">
+	        <field name="name">upload.efaktur.form</field>
+	        <field name="model">upload.efaktur</field>
+	        <field name="type">form</field>
+	        <field name="arch" type="xml">
+	            <form string="Upload E-Faktur">
+	            	<label string="Please define spesific path on your System Parameter with Key ir_attachment.location"/>
+	                <group>
+	                    <field name="name" />
+	                </group>
+	               <separator string="" colspan="4"/>
+	               <footer>
+	                    <button name="action_import" class="oe_highlight" string="Import" type="object"/>
+	                    <button class="cancel" special="cancel" string="Cancel"/>
+	               </footer>
+	           </form>
+	        </field>
+	    </record>
+	
+	    <!--  Action of Import inventory wizard -->
+	
+	    <record id="action_upload_efaktur" model="ir.actions.act_window">
+	        <field name="name">Upload E-Faktur</field>
+	        <field name="res_model">upload.efaktur</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	       <field name="view_id" ref="view_upload_efaktur"/>
+	       <field name="target">new</field>
+	    </record>
+
+    <menuitem  id="menu_upload_efaktur" name="Upload E-Faktur" action="action_upload_efaktur" parent="account.account_account_menu" sequence="4"/>
+    </data>
+</odoo>

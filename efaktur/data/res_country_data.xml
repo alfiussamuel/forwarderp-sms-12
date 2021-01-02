@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="base.id" model="res.country">
+            <field name="name">Indonesia</field>
+            <field name="code">id</field>
+            <field name="image" type="base64" file="base/static/img/country_flags/id.png"></field>
+            <field name="address_format" eval="'%(street)s\n%(street2)s Blok %(blok)s/No.%(nomor)s RT/RW: %(rt)s/%(rw)s\n%(kabupaten_name)s, %(kecamatan_name)s\n%(city)s - %(state_name)s %(zip)s\n%(country_name)s'" />
+            <field name="currency_id" ref="base.IDR"/>
+        </record>
+        
+    </data>
+</openerp>

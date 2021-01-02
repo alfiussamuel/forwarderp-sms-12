@@ -1,0 +1,2516 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * gts_account_report
+# 
+# Translators:
+# sao sang <saosangmo@yahoo.com>, 2018
+# Tuan Tran <tmtuan.projects@gmail.com>, 2018
+# Martin Trigaux, 2018
+# fanha99 <fanha99@hotmail.com>, 2018
+# Jean-Charles Drubay <jcdrubay@gmail.com>, 2018
+# Duy BQ <duybq86@gmail.com>, 2018
+# Minh Nguyen <ndminh210994@gmail.com>, 2018
+# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-19 09:12+0000\n"
+"PO-Revision-Date: 2018-08-24 11:36+0000\n"
+"Last-Translator: Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2019\n"
+"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:240
+#, python-format
+msgid "%s Payment Reminder"
+msgstr "%s nhắc nhở thanh toán"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_general_ledger_report
+msgid "&amp;nbsp;"
+msgstr "&amp;nbsp;"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:30
+#, python-format
+msgid "&times;"
+msgstr "&times;"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report.py:582
+#, python-format
+msgid "(No Group)"
+msgstr "(Không gom)"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_financial_report.py:355
+#: code:addons/gts_account_report/models/account_financial_report.py:357
+#, python-format
+msgid "(copy)"
+msgstr "(sao chép)"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:22
+#, python-format
+msgid "1 - 30"
+msgstr "1 - 30"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:22
+#, python-format
+msgid "31 - 60"
+msgstr "31 - 60"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:22
+#, python-format
+msgid "61 - 90"
+msgstr "61 - 90"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:22
+#, python-format
+msgid "91 - 120"
+msgstr "91 - 120"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_analytic
+msgid "<b>Accounts</b><br/>"
+msgstr "<b>Tài khoản</b><br/>"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "<b>Next Reminder Date:</b>"
+msgstr "<b>Ngày nhắc tiếp theo:</b>"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_analytic
+msgid "<b>Tags</b><br/>"
+msgstr "<b>Thẻ</b><br/>"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.main_template
+msgid ""
+"<br/>\n"
+"                <span>You can visualize their impact by activating the option to view unposted entries, or post them to remove this warning.</span>"
+msgstr ""
+"<br/>\n"
+"                <span>You can visualize their impact by activating the option to view unposted entries, or post them to remove this warning.</span>"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+msgid ""
+"<br/>\n"
+"                Analytic Accounts:"
+msgstr ""
+"<br/>\n"
+"                Analytic Accounts:"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+msgid "<br/>Companies:"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "<i class=\"fa fa-circle\" style=\"color: green;\"/> Good Debtor"
+msgstr "<i class=\"fa fa-circle\" style=\"color: green;\"/> Nợ tốt"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "<i class=\"fa fa-circle\" style=\"color: grey;\"/> Normal Debtor"
+msgstr "<i class=\"fa fa-circle\" style=\"color: grey;\"/> Nợ bình thường"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "<i class=\"fa fa-circle\" style=\"color: red;\"/> Bad Debtor"
+msgstr "<i class=\"fa fa-circle\" style=\"color: red;\"/> Nợ xấu"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "<i class=\"fa fa-envelope\" role=\"img\" aria-label=\"Email\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.main_template
+msgid ""
+"<i class=\"fa fa-fw fa-pencil o_gts_account_report_edit_summary_pencil\" "
+"role=\"img\" aria-label=\"Edit Summary\" title=\"Edit Summary\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "<i class=\"fa fa-mobile fa-fw\" role=\"img\" aria-label=\"Mobile\" title=\"Mobile\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "<i class=\"fa fa-phone fa-fw\" role=\"img\" aria-label=\"Phone\" title=\"Phone\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+msgid "<span class=\"fa fa-bar-chart\"/> Comparison:"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_journals
+msgid ""
+"<span class=\"fa fa-book\"/>\n"
+"            Journals:"
+msgstr ""
+"<span class=\"fa fa-book\"/>\n"
+"            Sổ nhật ký:"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "<span class=\"fa fa-calendar\" title=\"Dates\" role=\"img\" aria-label=\"Dates\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_aged_partner_balance_line_report
+msgid ""
+"<span class=\"fa fa-circle color-green trust-partner\" role=\"img\" aria-"
+"label=\"Balance is good\" title=\"Balance is good\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_partner_ledger_report
+msgid ""
+"<span class=\"fa fa-circle color-green trust-partner\" role=\"img\" aria-"
+"label=\"Partner ledger is good\" title=\"Partner ledger is good\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_aged_partner_balance_line_report
+msgid ""
+"<span class=\"fa fa-circle color-red trust-partner\" role=\"img\" aria-"
+"label=\"Balance is bad\" title=\"Balance is bad\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_partner_ledger_report
+msgid ""
+"<span class=\"fa fa-circle color-red trust-partner\" role=\"img\" aria-"
+"label=\"Partner ledger is bad\" title=\"Partner ledger is bad\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_aged_partner_balance_line_report
+msgid ""
+"<span class=\"fa fa-circle color-transparent trust-partner\" role=\"img\" "
+"aria-label=\"Balance is normal\" title=\"Balance is normal\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_partner_ledger_report
+msgid ""
+"<span class=\"fa fa-circle color-transparent trust-partner\" role=\"img\" "
+"aria-label=\"Partner ledger is normal\" title=\"Partner ledger is normal\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_multi_company
+msgid ""
+"<span class=\"fa fa-filter\"/>\n"
+"            Companies:"
+msgstr ""
+"<span class=\"fa fa-filter\"/>\n"
+"            Công ty:"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_ir_filters
+msgid ""
+"<span class=\"fa fa-filter\"/>\n"
+"            Filters:"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "<span class=\"fa fa-filter\"/> Options:"
+msgstr "<span class=\"fa fa-filter\"/> Tùy chọn:"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.followup_search_template
+msgid "<span class=\"fa fa-filter\"/> Partners:"
+msgstr "<span class=\"fa fa-filter\"/> Đối tác:"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_analytic
+msgid "<span class=\"fa fa-folder-open\"/> Analytic"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_partner
+msgid "<span class=\"fa fa-folder-open\"/> Partners"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.res_config_settings_view_form
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" groups=\"base.group_multi_company\"/>"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_account_type
+msgid ""
+"<span class=\"fa fa-user\"/>\n"
+"            Account:"
+msgstr ""
+"<span class=\"fa fa-user\"/>\n"
+"            Tài khoản:"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.footnotes_template
+msgid ""
+"<span class=\"o_gts_account_report_footnote_icons\"><i class=\"fa fa-fw fa-"
+"trash-o\" role=\"img\" aria-label=\"Delete\" title=\"Delete\"/></span>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Payment Follow-up</span>\n"
+"                        <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" role=\"img\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.res_partner_view_form
+msgid "<span class=\"o_stat_text\">Due</span>"
+msgstr "<span class=\"o_stat_text\">Đến hạn</span>"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.main_template
+msgid ""
+"<span class=\"searchIcon\"><i class=\"fa fa-search\" role=\"img\" aria-"
+"label=\"Search\" title=\"Search\"/></span>"
+msgstr ""
+"<span class=\"searchIcon\"><i class=\"fa fa-search\" role=\"img\" aria-"
+"label=\"Search\" title=\"Tìm kiếm\"/></span>"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.gts_account_report_journal_dashboard_kanban_view_account_manager
+msgid "<span title=\"Latest Statement\">Latest Statement</span>"
+msgstr "<span title=\"Latest Statement\">Sao kê mới nhất</span>"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid ""
+"<strong>Warning!</strong> No action needs to be taken for this partner."
+msgstr ""
+"<strong>Cảnh báo!</strong> Không cần thực hiện hành động nào cho đối tác "
+"này."
+
+#. module: gts_account_report
+#: sql_constraint:account.financial.html.report.line:0
+msgid "A report line with the same code already exists."
+msgstr "Một dòng báo cáo có cùng mã đã tồn tại."
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_total_assets0
+msgid "ASSETS"
+msgstr "TÀI SẢN"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:21
+#: code:addons/gts_account_report/models/account_partner_ledger.py:31
+#, python-format
+msgid "Account"
+msgstr "Tài khoản"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_analytic_report
+msgid "Account Analytic Report"
+msgstr ""
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Bảng hệ thống tài khoản"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_form
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_tree
+msgid "Account Report"
+msgstr "Báo cáo tài khoản"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_financial_html_report_line
+msgid "Account Report (HTML Line)"
+msgstr ""
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_financial_html_report
+msgid "Account Report (HTML)"
+msgstr ""
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_report_footnote
+msgid "Account Report Footnote"
+msgstr ""
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_analytic_report.py:79
+#, python-format
+msgid "Accounts without a group"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Accrual Basis"
+msgstr "Kế toán dồn tích"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+msgid "Accrual Basis<br/>"
+msgstr "Kế toán dồn tích<br/>"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__action_id
+msgid "Action"
+msgstr "Hành động"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/js/gts_account_report.js:360
+#: model_terms:ir.ui.view,arch_db:gts_account_report.main_template
+#, python-format
+msgid "Add a note"
+msgstr "Thêm một ghi chú"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_res_company__totals_below_sections
+#: model:ir.model.fields,field_description:gts_account_report.field_res_config_settings__totals_below_sections
+msgid "Add totals below sections"
+msgstr ""
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_prepayments_received0
+msgid "Advance Payments received from customers"
+msgstr "Các khoản thanh toán trước nhận được từ khách hàng"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_cash_paid0
+msgid "Advance payments made to suppliers"
+msgstr "Các khoản thanh toán trước cho các nhà cung cấp"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_aged_partner
+msgid "Aged Partner Balances"
+msgstr "Số dư đối tác theo tuổi"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:118
+#: model:ir.actions.client,name:gts_account_report.action_account_report_ap
+#: model:ir.model,name:gts_account_report.model_account_aged_payable
+#: model:ir.ui.menu,name:gts_account_report.menu_action_account_report_aged_payable
+#, python-format
+msgid "Aged Payable"
+msgstr "Tuổi nợ phải trả"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.gts_account_report_journal_dashboard_kanban_view
+msgid "Aged Payables"
+msgstr "Tuổi nợ phải trả"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:98
+#: model:ir.actions.client,name:gts_account_report.action_account_report_ar
+#: model:ir.model,name:gts_account_report.model_account_aged_receivable
+#: model:ir.ui.menu,name:gts_account_report.menu_action_account_report_aged_receivable
+#, python-format
+msgid "Aged Receivable"
+msgstr "Tuổi nợ phải thu"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.gts_account_report_journal_dashboard_kanban_view
+msgid "Aged Receivables"
+msgstr "Tuổi nợ phải thu"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_journals
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_multi_company
+msgid "All"
+msgstr "Tất cả"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__analytic
+msgid "Allow analytic filters"
+msgstr "Cho phép có bộ lọc phân tích"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__cash_basis
+msgid "Allow cash basis mode"
+msgstr "Cho phép chế độ Kế toán dựa trên dòng tiền"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__comparison
+msgid "Allow comparison"
+msgstr "Cho phép so sánh"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__show_journal_filter
+msgid "Allow filtering by journals"
+msgstr "Cho phép lọc theo nhật ký"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,show_domain:0
+msgid "Always"
+msgstr "Luôn luôn"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:24
+#, python-format
+msgid "Amount"
+msgstr "Tổng tiền"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_partner_ledger.py:40
+#, python-format
+msgid "Amount Currency"
+msgstr "Số tiền theo loại tiền"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+msgid "Analytic Accounts:"
+msgstr ""
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_caret_options
+msgid "Analytic Entries"
+msgstr "Bút toán quản trị"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_analytic_report.py:29
+#: model:ir.actions.client,name:gts_account_report.action_account_report_analytic
+#: model:ir.ui.menu,name:gts_account_report.menu_action_report_account_analytic
+#, python-format
+msgid "Analytic Report"
+msgstr "Báo cáo phân tích"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+msgid "Analytic Tags:"
+msgstr "Từ khóa phân tích:"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template
+msgid "Annotate"
+msgstr "Chú thích"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__applicable_filters_ids
+msgid "Applicable Filters"
+msgstr "Bộ lọc có thể áp dụng"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "Apply"
+msgstr "Áp dụng"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report.py:770
+#, python-format
+msgid "As of %s"
+msgstr "Tính đến %s"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,special_date_changer:0
+msgid "At the beginning of the period"
+msgstr "Vào lúc bắt đầu của kì"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_caret_options
+msgid "Audit"
+msgstr "Kiểm toán"
+
+#. module: gts_account_report
+#: model:ir.ui.menu,name:gts_account_report.gts_account_report_audit_reports_menu
+msgid "Audit Reports"
+msgstr "Báo cáo kiểm toán"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "Auto"
+msgstr "Tự động"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_form
+msgid "Available Filters & Options"
+msgstr "Tùy chọn & Bộ lọc cho phép"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_avgcre0
+msgid "Average creditors days"
+msgstr "Ngày chủ nợ trung bình"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_avdebt0
+msgid "Average debtors days"
+msgstr "Ngày nợ trung bình"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "Bad debtor"
+msgstr "Nợ xấu"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_analytic_report.py:25
+#: code:addons/gts_account_report/models/account_consolidated_journals.py:29
+#: code:addons/gts_account_report/models/account_general_ledger.py:35
+#: code:addons/gts_account_report/models/account_partner_ledger.py:42
+#, python-format
+msgid "Balance"
+msgstr "Số dư"
+
+#. module: gts_account_report
+#: model:account.financial.html.report,name:gts_account_report.account_financial_report_balancesheet0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_balancesheet0
+#: model:ir.actions.client,name:gts_account_report.account_financial_html_report_action_2
+#: model:ir.actions.client,name:gts_account_report.action_account_report_bs
+#: model:ir.ui.menu,name:gts_account_report.account_financial_html_report_menu_2
+msgid "Balance Sheet"
+msgstr "Bảng cân đối kế toán"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:211
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:212
+#: model:ir.actions.client,name:gts_account_report.action_account_report_bank_reconciliation
+#: model:ir.actions.client,name:gts_account_report.action_account_report_bank_reconciliation_with_journal
+#, python-format
+msgid "Bank Reconciliation"
+msgstr "Đối soát ngân hàng"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_bank_reconciliation_report
+msgid "Bank Reconciliation Report"
+msgstr "Báo cáo đối soát ngân hàng"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_bank_view0
+msgid "Bank and Cash Accounts"
+msgstr "Tài khoản ngân hàng và tiền mặt"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_general_ledger.py:432
+#, python-format
+msgid "Base Amount"
+msgstr "Tổng cơ bản"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__date_range
+msgid "Based on date ranges"
+msgstr "Dựa trên khoản thời gian"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_cash0
+msgid "Cash"
+msgstr "Tiền mặt"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Cash Basis"
+msgstr "Kế toán theo dòng tiền"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Cash Basis Method"
+msgstr "Phương thức kế toán theo dòng tiền"
+
+#. module: gts_account_report
+#: model:account.financial.html.report,name:gts_account_report.account_financial_report_cashsummary0
+#: model:ir.actions.client,name:gts_account_report.account_financial_html_report_action_3
+#: model:ir.actions.client,name:gts_account_report.action_account_report_cs
+#: model:ir.ui.menu,name:gts_account_report.account_financial_html_report_menu_3
+msgid "Cash Flow Statement"
+msgstr "Báo cáo lưu chuyển tiền mặt"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_opening_balance0
+msgid "Cash and cash equivalents, beginning of period"
+msgstr "Tiền và tương đương tiền, số dư đầu kỳ"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_closing_balance0
+msgid "Cash and cash equivalents, closing balance"
+msgstr "Tiền và tương đương tiền, Số dư cuối kỳ"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_financing0
+msgid "Cash flows from financing activities"
+msgstr "Dòng tiền từ hoạt động tài chính"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_investing0
+msgid "Cash flows from investing & extraordinary activities"
+msgstr "Dòng tiền từ hoạt động đầu tư & hoạt động bất thường"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_operating0
+msgid "Cash flows from operating activities"
+msgstr "Dòng tiền từ hoạt động vận hành doanh nghiệp"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_unclassified0
+msgid "Cash flows from unclassified activities"
+msgstr "Dòng tiền từ hoạt động không xác định"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_financing_in0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_investing_in0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_unclassified_in0
+msgid "Cash in"
+msgstr "Tiền vào"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_financing_out0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_investing_out0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_unclassified_out0
+msgid "Cash out"
+msgstr "Tiền ra"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_cash_spent0
+msgid "Cash paid for operating activities"
+msgstr "Tiền được trả cho hoạt động vận hành doanh nghiệp"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_cash_received0
+msgid "Cash received"
+msgstr "Tiền nhận được"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_cash_received0
+msgid "Cash received from operating activities"
+msgstr "Tiền nhận được từ hoạt động vận hành doanh nghiệp"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_cash_spent0
+msgid "Cash spent"
+msgstr "Tiền đã xài"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_cash_surplus0
+msgid "Cash surplus"
+msgstr "Số dư quỹ tiền mặt"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_followup_report
+msgid "Change expected payment date"
+msgstr "Đổi ngày thanh toán dự kiến"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_coa_report
+msgid "Chart of Account Report"
+msgstr "Báo cáo hệ thống tài khoản"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__children_ids
+msgid "Children"
+msgstr "Con"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_line_form
+msgid "Children Lines"
+msgstr "Dòng con"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_closing_bank_balance0
+msgid "Closing bank balance"
+msgstr "Số dư ngân hàng cuối kỳ"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__code
+msgid "Code"
+msgstr "Mã"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:32
+#: code:addons/gts_account_report/models/account_general_ledger.py:30
+#, python-format
+msgid "Communication"
+msgstr "Thông tin giao dịch"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_res_company
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+#: model_terms:ir.ui.view,arch_db:gts_account_report.main_template
+msgid "Companies:"
+msgstr "Công ty:"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__company_id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_line_form
+msgid "Computation"
+msgstr "Tính toán"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_regulator0
+msgid "Computation Error: unexplained difference"
+msgstr "Tính bị sai: chênh lệch không giải thích được"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_res_config_settings
+msgid "Config Settings"
+msgstr "Thiết lập cấu hình"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_consolidated_journals.py:26
+#: model:ir.actions.client,name:gts_account_report.action_account_report_cj
+#: model:ir.ui.menu,name:gts_account_report.menu_action_account_report_cj
+#, python-format
+msgid "Consolidated Journals"
+msgstr "Nhật ký tổng hợp"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_consolidated_journal
+msgid "Consolidated Journals Report"
+msgstr "Báo cáo nhật ký tổng hợp"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_res_partner
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_line_form
+msgid "Cosmetics"
+msgstr "Cosmetics"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cost_sales0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_direct_costs0
+msgid "Cost of Revenue"
+msgstr "Giá vốn hàng bán"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:248
+#, python-format
+msgid ""
+"Could not send mail to partner because it does not have any email address "
+"defined"
+msgstr ""
+"Không thể gửi thư cho đối tác vì không có bất kỳ địa chỉ email nào được xác "
+"định"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__create_uid
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__create_uid
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_footnote__create_uid
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__create_date
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__create_date
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_footnote__create_date
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_financial_report.py:93
+#, python-format
+msgid "Crebit"
+msgstr ""
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_consolidated_journals.py:50
+#: code:addons/gts_account_report/models/account_financial_report.py:142
+#: code:addons/gts_account_report/models/account_general_ledger.py:34
+#: code:addons/gts_account_report/models/account_partner_ledger.py:38
+#: code:addons/gts_account_report/models/account_report_coa.py:32
+#: code:addons/gts_account_report/models/account_report_coa.py:37
+#: code:addons/gts_account_report/models/account_report_coa.py:41
+#: code:addons/gts_account_report/models/account_report_coa.py:43
+#, python-format
+msgid "Credit"
+msgstr "Có"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_general_ledger.py:32
+#, python-format
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_current_assets0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_current_assets_view0
+msgid "Current Assets"
+msgstr "Tài sản ngắn hạn"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_current_liabilities0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_current_liabilities1
+msgid "Current Liabilities"
+msgstr "Nợ ngắn hạn"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_current_year_earnings_line_2
+msgid "Current Year Allocated Earnings"
+msgstr "Thu nhập được phân bổ trong năm hiện tại"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_current_year_earnings_line_1
+msgid "Current Year Earnings"
+msgstr "Thu nhập năm hiện tại"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_current_year_earnings0
+msgid "Current Year Unallocated Earnings"
+msgstr "Thu nhập chưa phân bổ của năm hiện tại"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_ca_to_l0
+msgid "Current assets to liabilities"
+msgstr "Tài sản lưu động đến nợ phải trả"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:155
+#, python-format
+msgid "Current balance of account %s"
+msgstr "Số dư hiện tại của tài khoản %s"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:157
+#, python-format
+msgid "Current balance of accounts %s"
+msgstr "Số dư hiện tại của các tài khoản %s"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "Custom"
+msgstr "Tùy chỉnh"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/res_partner.py:87
+#, python-format
+msgid "Customer Ledger"
+msgstr "Sổ cái khách hàng"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.followup_filter_info_template
+msgid "Customer ref:"
+msgstr "Tham chiếu Khách hàng:"
+
+#. module: gts_account_report
+#: model:ir.actions.client,name:gts_account_report.action_account_followup
+msgid "Customers Statement"
+msgstr "Sao kê giao dịch của khách hàng"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:22
+#: code:addons/gts_account_report/models/account_followup_report.py:29
+#: code:addons/gts_account_report/models/account_general_ledger.py:29
+#, python-format
+msgid "Date"
+msgstr "Ngày"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "Date :"
+msgstr "Ngày :"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid ""
+"Date at which Odoo will remind you to take care of that follow-up if you "
+"choose \"remind me later\" button."
+msgstr ""
+"Ngày hệ thống sẽ nhắc bạn chăm sóc các khoản công nợ của mình nếu bạn chọn "
+"nút \"nhắc tôi sau\"."
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/js/gts_account_report.js:225
+#: code:addons/gts_account_report/static/src/js/gts_account_report.js:275
+#, python-format
+msgid "Date cannot be empty"
+msgstr "Ngày không thể bỏ trống"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_move_line__next_action_date
+msgid ""
+"Date where the next action should be taken for a receivable item. Usually, "
+"automatically set when sending reminders through the customer statement."
+msgstr ""
+"Ngày hành động tiếp theo nên được thực hiện cho một khoản phải thu. Thông "
+"thường, tự động được thiết lập khi gửi lời nhắc thông qua bảng sao kê khách "
+"hàng."
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.followup_filter_info_template
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "Date:"
+msgstr "Ngày:"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_res_config_settings__days_between_two_followups
+msgid "Days between two follow-ups"
+msgstr "Số ngày giữa 2 lần nhắc nhở công nợ"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_consolidated_journals.py:29
+#: code:addons/gts_account_report/models/account_financial_report.py:134
+#: code:addons/gts_account_report/models/account_general_ledger.py:33
+#: code:addons/gts_account_report/models/account_partner_ledger.py:36
+#: code:addons/gts_account_report/models/account_report_coa.py:31
+#: code:addons/gts_account_report/models/account_report_coa.py:36
+#: code:addons/gts_account_report/models/account_report_coa.py:40
+#: code:addons/gts_account_report/models/account_report_coa.py:42
+#, python-format
+msgid "Debit"
+msgstr "Nợ"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_depreciation0
+msgid "Depreciation"
+msgstr "Khấu hao"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_detailed_net_profit0
+msgid "Detailed Net Profit"
+msgstr "Lợi nhuận ròng chi tiết"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_consolidated_journals.py:86
+#, python-format
+msgid "Details per month"
+msgstr "Thông tin từng tháng"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.gts_account_report_journal_dashboard_kanban_view_account_manager
+msgid "Difference"
+msgstr "Chênh lệch"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:190
+#, python-format
+msgid ""
+"Difference between Virtual GL Balance and Last Bank Statement Ending Balance.\n"
+"\n"
+"If non-zero, it could be due to\n"
+"  1) some bank statements being not yet encoded into Odoo\n"
+"  2) payments double-encoded"
+msgstr ""
+"Khoản chênh lệch giữa Số dư sổ cái ảo và Sao kê ngân hàng cuối kỳ mới nhất.\n"
+"\n"
+"Nếu nó không bằng 0, vậy có thể là do 1 số nguyên nhân sau\n"
+"  1) một khoản sau kê nào đó chưa được đưa vào hệ thống\n"
+"  2) thanh toán được ghi nhận 2 lần"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_aged_partner__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_aged_payable__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_aged_receivable__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_analytic_report__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_bank_reconciliation_report__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_coa_report__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_consolidated_journal__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_followup_report__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_general_ledger__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_generic_tax_report__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_partner_ledger__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_footnote__display_name
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report__hierarchy_option
+msgid "Display the hierarchy choice in the report options"
+msgstr "Hiển thị lựa chọn phân cấp trong tùy chọn báo cáo"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__domain
+msgid "Domain"
+msgstr "Miền"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:16
+#, python-format
+msgid "Done"
+msgstr "Hoàn thành"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:30
+#: code:addons/gts_account_report/models/account_partner_ledger.py:33
+#, python-format
+msgid "Due Date"
+msgstr "Ngày đến hạn"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.res_config_settings_view_form
+msgid "Duration between two reminders"
+msgstr "Thời lượng giữa hai lần nhắc"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_equity0
+msgid "EQUITY"
+msgstr "VỐN CHỦ SỞ HỮU"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__hierarchy_option
+msgid "Enable the hierarchy option"
+msgstr "Bật tùy chọn phân cấp"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "End Date :"
+msgstr "Ngày kết thúc :"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "End of Last Financial Year"
+msgstr "Kết thúc của năm tài chính trước"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "End of Last Month"
+msgstr "Kết thúc của tháng trước"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "End of Last Quarter"
+msgstr "Cuối quý trước"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:34
+#, python-format
+msgid "Excluded"
+msgstr "Không bao gồm"
+
+#. module: gts_account_report
+#: model:account.financial.html.report,name:gts_account_report.account_financial_report_executivesummary0
+#: model:ir.actions.client,name:gts_account_report.account_financial_html_report_action_4
+#: model:ir.ui.menu,name:gts_account_report.account_financial_html_report_menu_4
+msgid "Executive Summary"
+msgstr "Bảng tóm tắt hoạt động"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:33
+#, python-format
+msgid "Expected Date"
+msgstr "Ngày dự kiến"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:55
+#: model:ir.model.fields,field_description:gts_account_report.field_account_move_line__expected_pay_date
+#, python-format
+msgid "Expected Payment Date"
+msgstr "Ngày thanh toán dự kiến"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/res_partner.py:147
+#, python-format
+msgid "Expected pay date has been changed from %s to %s for invoice %s"
+msgstr "Ngày thanh toán dự kiến được chuyển từ %s tới %s của hóa đơn %s"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_move_line__expected_pay_date
+msgid ""
+"Expected payment date as manually set through the customer statement (e.g: "
+"if you had the customer on the phone and want to remember the date he "
+"promised he would pay)"
+msgstr ""
+"Ngày thanh toán dự kiến thường được ghi nhận thủ công thông qua sao kê khách"
+" hàng (ví dụ: ví dụ bạn có một khách hàng kèm theo số điện thoại và muốn "
+"nhắc nhở người đó ngày người đó hứa trả)"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_expenses0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_expense0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_less_expenses0
+msgid "Expenses"
+msgstr "Chi phí"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report.py:701
+#, python-format
+msgid "Export (XLSX)"
+msgstr "Xuất file (EXCEL)"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+msgid "Filter:"
+msgstr "Bộ lọc:"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report__applicable_filters_ids
+msgid "Filters that can be used to filter and group lines in this report."
+msgstr "Bộ lọc được dùng để lọc và nhóm các chi tiết của báo cáo này."
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__financial_report_id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__financial_report_id
+msgid "Financial Report"
+msgstr "Báo cáo tài chính"
+
+#. module: gts_account_report
+#: model:ir.actions.act_window,name:gts_account_report.action_account_financial_report_tree
+#: model:ir.ui.menu,name:gts_account_report.menu_account_financial_reports_tree
+msgid "Financial Reports"
+msgstr "Báo cáo tài chính"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,figure_type:0
+msgid "Float"
+msgstr "Float"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,show_domain:0
+msgid "Foldable"
+msgstr "Gom lại"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template
+msgid "Folded"
+msgstr "Đóng vào"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_followup_report
+msgid "Follow-up Report"
+msgstr "Báo cáo theo dõi công nợ"
+
+#. module: gts_account_report
+#: model:ir.actions.act_window,name:gts_account_report.action_view_list_customer_statements
+#: model:ir.ui.menu,name:gts_account_report.customer_statements_menu
+msgid "Follow-up Reports"
+msgstr "Báo cáo theo dõi công nợ"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.customer_statements_tree_view
+msgid "Follow-up Reports Tree View"
+msgstr "Danh sách báo cáo theo dõi công nợ"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:235
+#, python-format
+msgid "Follow-up email sent to %s"
+msgstr "Công nợ đã được gửi email tới %s"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:257
+#, python-format
+msgid "Follow-up letter printed"
+msgstr "Thư nhắc công nợ đã được in"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.gts_account_report_journal_dashboard_kanban_view
+msgid "Follow-up reports"
+msgstr "Báo cáo công nợ"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:35
+#, python-format
+msgid "Follow-ups Done / Total Follow-ups"
+msgstr "Công nợ hoàn thành / Tổng công nợ"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:180
+#, python-format
+msgid "Followup Report"
+msgstr "Báo cáo theo dõi"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_res_partner__followup_status
+msgid "Followup status"
+msgstr "Tình trạng theo dõi công nợ"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__footnotes_ids
+msgid "Footnotes"
+msgstr "Chân trang"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,special_date_changer:0
+msgid "Force given dates for all accounts and account types"
+msgstr "Buộc có ngày tháng cho tất cả tài khoản và loại tài khoản"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__formulas
+msgid "Formulas"
+msgstr "Công thức"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report.py:783
+#, python-format
+msgid ""
+"From %s \n"
+" to  %s"
+msgstr ""
+"Từ %s \n"
+" tới  %s"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,special_date_changer:0
+msgid "From the beginning"
+msgstr "Từ khi bắt đầu"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,special_date_changer:0
+msgid "From the beginning of the fiscal year"
+msgstr "Từ đầu năm tài chính"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "From:"
+msgstr "Từ:"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_general_ledger.py:453
+#: model:ir.actions.client,name:gts_account_report.action_account_report_general_ledger
+#: model:ir.ui.menu,name:gts_account_report.menu_action_account_report_general_ledger
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_caret_options
+#, python-format
+msgid "General Ledger"
+msgstr "Sổ cái"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_general_ledger
+msgid "General Ledger Report"
+msgstr "Báo cáo Sổ cái"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report.py:160
+#, python-format
+msgid "General Report"
+msgstr "Báo cáo chung"
+
+#. module: gts_account_report
+#: model:ir.actions.client,name:gts_account_report.action_account_report_gt
+#: model:ir.model,name:gts_account_report.model_account_generic_tax_report
+msgid "Generic Tax Report"
+msgstr "Báo cáo thuế chung"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "Good debtor"
+msgstr "Nợ tốt"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_gross_profit0
+msgid "Gross Profit"
+msgstr "Lợi nhuận gộp"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_gross_profit0
+msgid "Gross profit"
+msgstr "Lợi nhuận gộp"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_gpmargin0
+msgid "Gross profit margin (gross profit / operating income)"
+msgstr "Lợi nhuận biên gộp (lợi nhuận gộp / hoạt động kinh doanh)"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__groupby
+msgid "Group by"
+msgstr "Nhóm theo"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_financial_report.py:291
+#: code:addons/gts_account_report/models/account_financial_report.py:867
+#: code:addons/gts_account_report/models/account_financial_report.py:981
+#, python-format
+msgid "Groupby should be a field from account.move.line"
+msgstr "Nhóm theo phải là một trường từ account.move.line"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_financial_report.py:831
+#, python-format
+msgid "Groupby should be a journal item field"
+msgstr "Nhóm theo phải là trường mục Nhật ký"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__hide_if_zero
+msgid "Hide If Zero"
+msgstr "Ẩn nếu là 0"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Hierarchy"
+msgstr "Phân cấp bậc"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Hierarchy and Subtotals"
+msgstr "Phân cấp bậc và thành tiền"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_aged_partner__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_aged_payable__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_aged_receivable__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_analytic_report__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_bank_reconciliation_report__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_coa_report__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_consolidated_journal__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_followup_report__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_general_ledger__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_generic_tax_report__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_partner_ledger__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_footnote__id
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__id
+msgid "ID"
+msgstr "ID"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.followup_search_template
+msgid "In Need of Action"
+msgstr "Có nhu cầu thực hiện"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.customer_statements_search_view
+#: selection:res.partner,followup_status:0
+msgid "In need of action"
+msgstr "Có nhu cầu thực hiện"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Include Unposted Entries"
+msgstr "Cả bút toán chưa vào sổ"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Include unposted entries"
+msgstr "Cả bút toán chưa vào sổ"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_income0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_totalincome0
+msgid "Income"
+msgstr "Doanh thu"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_general_ledger.py:308
+#: code:addons/gts_account_report/models/account_partner_ledger.py:35
+#: code:addons/gts_account_report/models/account_report_coa.py:50
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_coa_table_header
+#, python-format
+msgid "Initial Balance"
+msgstr "Dư đầu kỳ"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:43
+#, python-format
+msgid "Insert foot note here"
+msgstr "Điền ghi chú chân trang ở đây"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_move_line__internal_note
+msgid "Internal Note"
+msgstr "Ghi chú nội bộ"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__green_on_positive
+msgid "Is growth good when positive"
+msgstr "Là tăng trưởng tốt nếu số dương"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:21
+#: code:addons/gts_account_report/models/account_partner_ledger.py:30
+#, python-format
+msgid "JRNL"
+msgstr "SNK"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_move_line
+msgid "Journal Item"
+msgstr "Phát sinh"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_caret_options
+msgid "Journal Items"
+msgstr "Phát sinh"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report.py:309
+#, python-format
+msgid "Journal Items (%s)"
+msgstr "Bút toán (%s)"
+
+#. module: gts_account_report
+#: model:ir.actions.server,name:gts_account_report.action_journal_items
+msgid "Journal Items by tax"
+msgstr "Phát sinh có thuế"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_consolidated_journals.py:29
+#, python-format
+msgid "Journal Name (Code)"
+msgstr "Tên nhật ký (mã)"
+
+#. module: gts_account_report
+#: model:ir.actions.act_window,name:gts_account_report.action_account_print_journal_menu
+#: model:ir.ui.menu,name:gts_account_report.menu_print_journal
+msgid "Journals Audit"
+msgstr "Journals Audit"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+msgid "Journals:"
+msgstr "Phát sinh:"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_liabilities_view0
+msgid "LIABILITIES"
+msgstr "NỢ"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_liabilities_and_equity_view0
+msgid "LIABILITIES + EQUITY"
+msgstr ""
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:188
+#, python-format
+msgid "Last Bank Statement Ending Balance"
+msgstr "Số dư cuối kỳ sao kê ngân hàng đóng mới nhất"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "Last Financial Year"
+msgstr "Năm tài chính trước"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_aged_partner____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_aged_payable____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_aged_receivable____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_analytic_report____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_bank_reconciliation_report____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_coa_report____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_consolidated_journal____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_followup_report____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_general_ledger____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_generic_tax_report____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_partner_ledger____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_footnote____last_update
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "Last Month"
+msgstr "Tháng gần nhất"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "Last Quarter"
+msgstr "Quý trước"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__write_uid
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__write_uid
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_footnote__write_uid
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__write_date
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__write_date
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_footnote__write_date
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__level
+msgid "Level"
+msgstr "Mức độ"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_footnote__line
+msgid "Line"
+msgstr "Dòng"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__line_ids
+msgid "Lines"
+msgstr "Chi tiết"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_general_ledger.py:384
+#: code:addons/gts_account_report/models/account_partner_ledger.py:206
+#, python-format
+msgid "Load more... (%s remaining)"
+msgstr "Tải thêm... (còn %s nữa)"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_line_form
+msgid "Main Info"
+msgstr "Thông tin chính"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_account_report_manager
+msgid "Manage Summary and Footnotes of Reports"
+msgstr "Quản lý tổng hợp và Chân trang của các bản in"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_footnote__manager_id
+msgid "Manager"
+msgstr "Quản lý"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "Manual"
+msgstr "Thủ công"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_partner_ledger.py:34
+#, python-format
+msgid "Matching Number"
+msgstr "Số khớp"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__generated_menu_id
+msgid "Menu Item"
+msgstr "Danh mục"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.res_config_settings_view_form
+msgid "Minimum"
+msgstr "Nhỏ nhất"
+
+#. module: gts_account_report
+#: model:ir.model,name:gts_account_report.model_ir_module_module
+msgid "Module"
+msgstr "Mô đun"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_generic_tax_report.py:19
+#: code:addons/gts_account_report/models/account_generic_tax_report.py:22
+#, python-format
+msgid "NET"
+msgstr "VỐN"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_general_ledger.py:431
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__name
+#, python-format
+msgid "Name"
+msgstr "Tên"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_net_assets0
+msgid "Net Assets"
+msgstr "Tài sản ròng"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_profit0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_net_profit0
+msgid "Net Profit"
+msgstr "Lợi nhuận ròng"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_net_assets0
+msgid "Net assets"
+msgstr "Tài sản ròng"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_cashsummary_net_increase0
+msgid "Net increase in cash and cash equivalents"
+msgstr "Lưu chuyển tiền thuần trong kỳ"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_npmargin0
+msgid "Net profit margin (net profit / income)"
+msgstr "Lợi nhuận ròng (lợi nhuận ròng / thu nhập)"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,show_domain:0
+msgid "Never"
+msgstr "Không bao giờ"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_move_line__next_action_date
+#: model:ir.model.fields,field_description:gts_account_report.field_res_partner__payment_next_action_date
+msgid "Next Action Date"
+msgstr "Ngày Hành động Kế tiếp"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/res_partner.py:154
+#, python-format
+msgid "Next action date: "
+msgstr "Ngày hoạt động kế: "
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+msgid "No Comparison"
+msgstr "Không so sánh"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,figure_type:0
+msgid "No Unit"
+msgstr "Không"
+
+#. module: gts_account_report
+#: selection:res.partner,followup_status:0
+msgid "No action needed"
+msgstr "Không có gì cần làm"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report.py:933
+#, python-format
+msgid "No comparison"
+msgstr "Không so sánh"
+
+#. module: gts_account_report
+#: model_terms:ir.actions.act_window,help:gts_account_report.action_view_list_customer_statements
+msgid "No follow-up to send!"
+msgstr "Không có công nợ cần gửi!"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:23
+#, python-format
+msgid "No followup to send!"
+msgstr "Không có công nợ cần gửi!"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "Normal debtor"
+msgstr "Nợ bình thường"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:21
+#, python-format
+msgid "Not due on: %s"
+msgstr "Chưa tới hạn: %s"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_move_line__internal_note
+msgid ""
+"Note you can set through the customer statement about a receivable journal "
+"item"
+msgstr ""
+"Ghi chú bạn có thể ghi nhận trong phần sao kê khách hàng ở phần các khoản "
+"phải thu"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_res_company__days_between_two_followups
+msgid "Number of days between two follow-ups"
+msgstr "Số ngày giữa 2 lần theo dõi"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+msgid "Number of periods :"
+msgstr "Số kì :"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:13
+#, python-format
+msgid ""
+"Odoo will remind you to take care of this follow-up on the next reminder "
+"date."
+msgstr ""
+"Hệ thống sẽ nhắc nhở bạn chăm sóc các khoản công nợ vào ngày nhắc nhở tiếp "
+"theo."
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:22
+#, python-format
+msgid "Older"
+msgstr "Cũ hơn"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Only Show Unreconciled Entries"
+msgstr "Chỉ hiện bút toán chưa đối soát"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_income0
+msgid "Operating Income"
+msgstr "Thu nhập từ kinh doanh"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:163
+#, python-format
+msgid "Operations to Process"
+msgstr "Hoạt động để xử lý"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_other_income0
+msgid "Other Income"
+msgstr "Doanh thu khác"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.customer_statements_search_view
+msgid "Overdue Invoices"
+msgstr "Hóa đơn quá hạn"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/res_partner.py:174
+#, python-format
+msgid "Overdue Payments for %s"
+msgstr "Các khoản thanh toán quá hạn của %s"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__parent_id
+msgid "Parent"
+msgstr "Cha"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__parent_id
+msgid "Parent Menu"
+msgstr "Trình đơn cha"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__parent_path
+msgid "Parent Path"
+msgstr "Parent Path"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_analytic_report.py:24
+#: code:addons/gts_account_report/models/account_general_ledger.py:31
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__partner_id
+#, python-format
+msgid "Partner"
+msgstr "Đối tác"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+msgid "Partner Categories:"
+msgstr "Nhóm đối tác:"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_partner_ledger.py:228
+#: code:addons/gts_account_report/models/res_partner.py:83
+#: code:addons/gts_account_report/models/res_partner.py:185
+#: model:ir.actions.client,name:gts_account_report.action_account_report_partner_ledger
+#: model:ir.model,name:gts_account_report.model_account_partner_ledger
+#: model:ir.ui.menu,name:gts_account_report.menu_action_account_report_partner_ledger
+#, python-format
+msgid "Partner Ledger"
+msgstr "Sổ cái đối tác"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_res_partner__partner_ledger_label
+msgid "Partner Ledger Label"
+msgstr "Nhãn Sổ cái Đối tác"
+
+#. module: gts_account_report
+#: model:ir.ui.menu,name:gts_account_report.gts_account_report_partners_reports_menu
+msgid "Partner Reports"
+msgstr "Báo cáo đối tác"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/js/gts_account_report.js:410
+#, python-format
+msgid "Partners"
+msgstr "Đối tác"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+msgid "Partners:"
+msgstr "Đối tác:"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_partner_ledger.py:19
+#, python-format
+msgid "Payable"
+msgstr "Phải trả"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_current_liabilities_payable
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_creditors0
+msgid "Payables"
+msgstr "Phải trả"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,figure_type:0
+msgid "Percents"
+msgstr "Phần trăm"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_performance0
+msgid "Performance"
+msgstr "Năng suất"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report.py:886
+#, python-format
+msgid "Please specify a start and end date."
+msgstr ""
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report.py:884
+#, python-format
+msgid "Please specify an end date."
+msgstr ""
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_fixed_assets_view0
+msgid "Plus Fixed Assets"
+msgstr "Cộng tài sản cố định"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_non_current_assets_view0
+msgid "Plus Non-current Assets"
+msgstr "Cộng Tài sản dài hạn"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_non_current_liabilities0
+msgid "Plus Non-current Liabilities"
+msgstr "Cộng Nợ cố định"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_position0
+msgid "Position"
+msgstr "Vị trí"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Posted Entries Only"
+msgstr "Chỉ bút toán vào sổ"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_prepayements0
+msgid "Prepayments"
+msgstr "Trả trước"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+msgid "Previous Period"
+msgstr "Kì trước"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_previous_year_earnings0
+msgid "Previous Years Unallocated Earnings"
+msgstr "Thu nhập chưa phân bổ của năm hiện tại"
+
+#. module: gts_account_report
+#: model:ir.actions.report,name:gts_account_report.action_report_followup
+msgid "Print Follow-up Letter"
+msgstr "In thư thông báo công nợ"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__print_on_new_page
+msgid "Print On New Page"
+msgstr "In trong trang mới"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report.py:701
+#, python-format
+msgid "Print Preview"
+msgstr "Xem trước bản in"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:7
+#, python-format
+msgid "Print letter"
+msgstr "In thư"
+
+#. module: gts_account_report
+#: model:ir.actions.server,name:gts_account_report.action_gts_account_report_customer_statements_do_followup
+msgid "Process Follow-ups"
+msgstr "Xử lý công nợ"
+
+#. module: gts_account_report
+#: model:ir.actions.client,name:gts_account_report.action_account_report_pnl
+msgid "Profit And Loss"
+msgstr "Kết quả kinh doanh"
+
+#. module: gts_account_report
+#: model:account.financial.html.report,name:gts_account_report.account_financial_report_profitandloss0
+#: model:ir.actions.client,name:gts_account_report.account_financial_html_report_action_1
+#: model:ir.ui.menu,name:gts_account_report.account_financial_html_report_menu_1
+msgid "Profit and Loss"
+msgstr "Lãi và lỗ"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_profitability0
+msgid "Profitability"
+msgstr "Lợi nhuận"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_partner_ledger.py:18
+#, python-format
+msgid "Receivable"
+msgstr "Khoản phải thu"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_debtors0
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_receivable0
+msgid "Receivables"
+msgstr "Các khoản phải thu"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.gts_account_report_journal_dashboard_kanban_view
+msgid "Reconciliation Report"
+msgstr "Báo cáo đối soát"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_partner_ledger.py:32
+#, python-format
+msgid "Ref"
+msgstr "Tham chiếu"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:21
+#: code:addons/gts_account_report/models/account_analytic_report.py:23
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:23
+#, python-format
+msgid "Reference"
+msgstr "Tham chiếu"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:13
+#, python-format
+msgid "Remind me later"
+msgstr "Nhắc tôi sau"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_form
+msgid "Report Definition"
+msgstr "Định dạng báo cáo"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_line_form
+msgid "Report Line"
+msgstr "Chi tiết báo cáo"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_form
+#: model_terms:ir.ui.view,arch_db:gts_account_report.view_account_financial_report_line_tree
+msgid "Report Lines"
+msgstr "Chi tiết báo cáo"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__report_name
+msgid "Report Name"
+msgstr "Tên báo cáo"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.res_config_settings_view_form
+msgid "Reporting"
+msgstr "Báo cáo"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_retained_earnings0
+msgid "Retained Earnings"
+msgstr "Lợi nhuận giữ lại"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_return_investment0
+msgid "Return on investments (net profit / assets)"
+msgstr "Lợi tức đầu tư (lợi nhuận / tài sản ròng)"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+msgid "Same Period Last Year"
+msgstr "Cùng kì năm ngoái"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.main_template
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "Save"
+msgstr "Lưu"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.main_template
+msgid "Search account"
+msgstr "Tìm tài khoản"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__name
+msgid "Section Name"
+msgstr "Tên phần"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid ""
+"Select this option if you want to manually define the next reminder date."
+msgstr ""
+"Chọn cái này nếu bạn muốn điều chỉnh thủ công ngày nhắc nhở tiếp theo."
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid "Send an email"
+msgstr "Gửi một email"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:10
+#, python-format
+msgid "Send by email"
+msgstr "Gửi qua email"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__sequence
+msgid "Sequence"
+msgstr "Thứ tự"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report__tax_report
+msgid ""
+"Set to True to automatically filter out journal items that have the boolean "
+"field 'tax_exigible' set to False"
+msgstr ""
+"Đặt là Có để tự động lọc ra các chi tiết bút toán có phần khai báo thuế được"
+" thiết lập là không đủ điều kiện"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_report_executivesummary_st_cash_forecast0
+msgid "Short term cash forecast"
+msgstr "Dự báo tiền mặt ngắn hạn"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__debit_credit
+msgid "Show Credit and Debit Columns"
+msgstr "Xem cột Nợ và Có"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__show_domain
+msgid "Show Domain"
+msgstr "Hiển thị Domain"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__unfold_all_filter
+msgid "Show unfold all filter"
+msgstr "Hiển thị bỏ qua tất cả bộ lọc"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:31
+#, python-format
+msgid "Source Document"
+msgstr "Tài liệu gốc"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__special_date_changer
+msgid "Special Date Changer"
+msgstr "Thay đổi ngày cụ thể"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_comparison
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "Start Date :"
+msgstr "Ngày bắt đầu :"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_manager__summary
+msgid "Summary"
+msgstr "Tổng kết"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_generic_tax_report.py:20
+#: code:addons/gts_account_report/models/account_generic_tax_report.py:23
+#, python-format
+msgid "TAX"
+msgstr "THUẾ"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/js/gts_account_report.js:417
+#, python-format
+msgid "Tags"
+msgstr "Từ khóa"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_general_ledger.py:445
+#, python-format
+msgid "Tax Amount"
+msgstr "Số tiền thuế"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_general_ledger.py:436
+#, python-format
+msgid "Tax Declaration"
+msgstr "Khai báo Thuế"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_generic_tax_report.py:153
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report__tax_report
+#: model:ir.ui.menu,name:gts_account_report.menu_action_account_report_gt
+#, python-format
+msgid "Tax Report"
+msgstr "Báo cáo thuế"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_report_footnote__text
+msgid "Text"
+msgstr "Văn bản"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_res_partner__payment_next_action_date
+msgid "The date before which no action should be taken."
+msgstr "Ngày trước khi không có hoạt động nào được thực hiện."
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/xml/account_report_template.xml:30
+#, python-format
+msgid "The follow-up report was successfully emailed!"
+msgstr "Báo cáo theo dõi công nợ đã được gửi email thành công!"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report__generated_menu_id
+msgid "The menu item generated for this report, or None if there isn't any."
+msgstr ""
+"Mục trình đơn được tạo cho báo cáo này hoặc Không có nếu không có bất kỳ mục"
+" nào."
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_followup_report
+msgid ""
+"The next reminder date is computed based on what you have defined in the "
+"accounting settings."
+msgstr ""
+"Ngày nhắc tiếp theo được tính dựa trên việc bạn quy định ở trong phần thiết "
+"lập kết toán."
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.main_template
+msgid "There are"
+msgstr "Đây là"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "This Financial Year"
+msgstr "Năm tài chính này"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "This Month"
+msgstr "Tháng này"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "This Quarter"
+msgstr "Quý này"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.res_config_settings_view_form
+msgid ""
+"This allows you to choose the position of totals in your financial reports."
+msgstr ""
+"Việc này cho phép bạn chọn vị trí tổng trong báo cáo tài chính của bạn."
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "Today"
+msgstr "Hôm nay"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:22
+#: code:addons/gts_account_report/models/account_aged_partner_balance.py:80
+#: code:addons/gts_account_report/models/account_consolidated_journals.py:85
+#: code:addons/gts_account_report/models/account_financial_report.py:1108
+#: code:addons/gts_account_report/models/account_financial_report.py:1193
+#: code:addons/gts_account_report/models/account_general_ledger.py:426
+#: code:addons/gts_account_report/models/account_partner_ledger.py:262
+#: code:addons/gts_account_report/models/account_report_coa.py:52
+#: code:addons/gts_account_report/models/account_report_coa.py:113
+#: model_terms:ir.ui.view,arch_db:gts_account_report.customer_statements_tree_view
+#: model_terms:ir.ui.view,arch_db:gts_account_report.template_coa_table_header
+#, python-format
+msgid "Total"
+msgstr "Tổng"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_general_ledger.py:394
+#, python-format
+msgid "Total "
+msgstr "Tổng "
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:35
+#: code:addons/gts_account_report/models/account_followup_report.py:108
+#: model:ir.model.fields,field_description:gts_account_report.field_res_partner__total_due
+#, python-format
+msgid "Total Due"
+msgstr "Tổng tới hạn"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_followup_report.py:119
+#: model:ir.model.fields,field_description:gts_account_report.field_res_partner__total_overdue
+#, python-format
+msgid "Total Overdue"
+msgstr "Tổng quá hạn"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:42
+#, python-format
+msgid "Total Virtual GL Balance"
+msgstr "Tổng số dư ảo trong sổ cái"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_report_coa.py:149
+#: model:ir.actions.client,name:gts_account_report.action_account_report_coa
+#: model:ir.ui.menu,name:gts_account_report.menu_action_account_report_coa
+#, python-format
+msgid "Trial Balance"
+msgstr "Bảng cân đối tài khoản"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_account_financial_html_report_line__figure_type
+msgid "Type"
+msgstr "Loại"
+
+#. module: gts_account_report
+#: model:account.financial.html.report.line,name:gts_account_report.account_financial_unaffected_earnings0
+msgid "Unallocated Earnings"
+msgstr "Thu nhập chưa phân bổ"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_financial_report.py:45
+#: code:addons/gts_account_report/models/account_financial_report.py:905
+#, python-format
+msgid "Undefined"
+msgstr "Không xác định"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:189
+#, python-format
+msgid "Unexplained Difference"
+msgstr "Khoản chênh lệch chưa được giải thích"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Unfold"
+msgstr "Mở ra"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Unfold All"
+msgstr "Mở tất cả"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template
+msgid "Unfolded"
+msgstr "Đã mở"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "Unreconciled"
+msgstr "Chưa được đối soát"
+
+#. module: gts_account_report
+#: model:ir.model.fields,field_description:gts_account_report.field_res_partner__unreconciled_aml_ids
+msgid "Unreconciled Aml"
+msgstr "Mã ami chưa đối soát"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:166
+#, python-format
+msgid "Unreconciled Bank Statement Lines"
+msgstr "Chi tiết sao kê chưa được đối soát"
+
+#. module: gts_account_report
+#: selection:account.financial.html.report.line,special_date_changer:0
+msgid "Use given dates"
+msgstr "Dùng ngày được cho"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:174
+#, python-format
+msgid "Validated Payments not Linked with a Bank Statement Line"
+msgstr "Thanh toán đã xác nhận chưa liên kết với sao kê nào"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/res_partner.py:85
+#, python-format
+msgid "Vendor Ledger"
+msgstr "Sổ cái nhà cung cấp"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_caret_options
+msgid "View Bank Statement"
+msgstr "Xem sao kê ngân hàng"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_caret_options
+msgid "View Bill"
+msgstr "Xem hóa đơn"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_caret_options
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_followup_report
+msgid "View Invoice"
+msgstr "Xem hóa đơn"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_aged_payable_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_aged_receivable_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_followup_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_general_ledger_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_partner_ledger_report
+msgid "View Journal Entry"
+msgstr "Xem bút toán"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_caret_options
+msgid "View Partner"
+msgstr "Xem đối tác"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_caret_options
+msgid "View Payment"
+msgstr "Xem thanh toán"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_bank_reconciliation_report.py:151
+#, python-format
+msgid "Virtual GL Balance"
+msgstr "Dư ảo trong sổ cái"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report_line__print_on_new_page
+msgid ""
+"When checked this line and everything after it will be printed on a new "
+"page."
+msgstr ""
+"Khi chọn cái này thì dòng này và mọi thứ phía sau nó sẽ được in trong một "
+"trang mới."
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_res_company__totals_below_sections
+#: model:ir.model.fields,help:gts_account_report.field_res_config_settings__totals_below_sections
+#: model_terms:ir.ui.view,arch_db:gts_account_report.res_config_settings_view_form
+msgid ""
+"When ticked, totals and subtotals appear below the sections of the report."
+msgstr ""
+"Khi chọn, tổng và thành tiền sẽ xuất hiện ở chỗ dưới mỗi khu vực của báo "
+"cáo."
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.filter_info_template
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_extra_options
+msgid "With Draft Entries"
+msgstr "Với bút toán nháp"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.followup_search_template
+msgid "With Overdue Invoices"
+msgstr "Với các hóa đơn quá hạn"
+
+#. module: gts_account_report
+#: selection:res.partner,followup_status:0
+msgid "With overdue invoices"
+msgstr "Với các hóa đơn quá hạn"
+
+#. module: gts_account_report
+#. openerp-web
+#: code:addons/gts_account_report/static/src/js/followup_form/followup_form_controller.js:69
+#, python-format
+msgid "You are done with the follow-ups!<br/>You have skipped %s partner(s)."
+msgstr "Bạn đã hoàn tất theo dõi công nợ!<br/>Bạn đã bỏ qua %s đối tác(s)."
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/res_partner.py:147
+#, python-format
+msgid "any"
+msgstr "bất kỳ"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.res_config_settings_view_form
+msgid "days between each reminder"
+msgstr "số ngày giữa mỗi lần nhắn nhở"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report__analytic
+msgid "display the analytic filters"
+msgstr "hiển thị bộ lọc phân tích"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report__comparison
+msgid "display the comparison filter"
+msgstr "hiển thị bộ lọc so sánh"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report__show_journal_filter
+msgid "display the journal filter in the report"
+msgstr "hiển thị bộ lọc nhật ký trong báo cáo"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report__cash_basis
+msgid "display the option to switch to cash basis mode"
+msgstr "hiển thị tùy chọn chuyển đổi qua chế độ Kế toán dựa trên dòng tiền"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report__unfold_all_filter
+msgid "display the unfold all options in report"
+msgstr "hiển thị tất cả các tùy chọn được mở trong báo cáo"
+
+#. module: gts_account_report
+#: code:addons/gts_account_report/models/account_financial_report.py:923
+#, python-format
+msgid "n/a"
+msgstr "n/a"
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_report_manager__report_name
+msgid "name of the model of the report"
+msgstr "tên của model trong báo cáo"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.main_template
+msgid "prior or included in this period."
+msgstr "ưu tiên hoặc bao gồm trong kỳ này."
+
+#. module: gts_account_report
+#: model:ir.model.fields,help:gts_account_report.field_account_financial_html_report__date_range
+msgid "specify if the report use date_range or single date"
+msgstr "chỉ định nếu báo cáo sử dụng date_range hoặc một ngày"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.search_template_date_filter
+msgid "to:"
+msgstr "đến:"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.main_template
+msgid "unposted Journal Entries"
+msgstr "bút toán chưa đưa vào sổ"
+
+#. module: gts_account_report
+#: model_terms:ir.ui.view,arch_db:gts_account_report.line_template_general_ledger_report
+msgid "⇒ journal items"
+msgstr "⇒ bút toán"

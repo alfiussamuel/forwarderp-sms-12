@@ -1,0 +1,50 @@
+<openerp>
+	<data>
+        <record id="view_account_invoice_filter_efaktur" model="ir.ui.view">
+            <field name="name">account.invoice.search</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="arch" type="xml">
+				<field name="user_id" position="after">
+					<field name="npwp_no"/>
+					<field name="nomor_faktur_id"/>
+				</field>
+            </field>
+        </record>  
+		
+		<record id="view_invoice_form_aos_customer_accounting" model="ir.ui.view">
+            <field name="name">account.invoice.customer.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+            	<!-- <xpath expr="/form/sheet/group/group[2]/div/field[@name='currency_id']" position="attributes">
+            		<attribute name="domain">[('visible','=',True)]</attribute>
+            	</xpath> -->
+            	<field name="partner_id" position="after">
+					<field name="npwp_no"/>
+					<field name="npwp_efaktur" invisible="1"/>
+				</field>
+            	<field name="user_id" position="after">
+                    <label string="Nomor Faktur"/>
+                    <div>
+                        <field name="code_transaction" nolabel="1" style="width: 12%%"/>
+                        <field name="nomor_faktur_id" nolabel="1" invisible="False" style="width: 75%%" domain="[('status','=','0'),('type','=','out')]" readonly="1" options="{'no_create':True, 'no_quick_create':True, 'no_create_edit':True, 'no_open':True}" />
+                    </div>                    
+                </field>
+            </field>
+        </record>        
+         
+		<record id="view_invoice_form_aos_supplier_accounting" model="ir.ui.view">
+			<field name="name">account.invoice.supplier.form</field>
+			<field name="model">account.invoice</field>
+			<field name="inherit_id" ref="account.invoice_supplier_form"/>
+			<field name="arch" type="xml">
+            	<xpath expr="/form/sheet/group/group[2]/field[@name='currency_id']" position="attributes">
+            		<attribute name="domain">[('visible','=',True)]</attribute>
+            	</xpath>
+			</field>
+		</record>
+
+	</data>
+</openerp>
+

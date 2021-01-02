@@ -1,0 +1,41 @@
+// Mobile 
+.o_web_client {
+    .o_mobile_search {
+        .o_mobile_search_header {
+            background-color: $gray-eee;
+
+            span:active {
+                background-color: darken($gray-eee, 10%);
+            }
+        }
+    }
+}
+
+// Filter search label
+.o_searchview {
+    .o_searchview_facet {
+        background-color: #ffffff;
+
+        .o_searchview_facet_label {
+            background-color: $o-brand-odoo;
+        }
+
+        .o_facet_values {
+            background-color: $gray-eee-lighter;
+        }
+    }
+
+    .o_searchview_autocomplete {
+        li>a {
+            color: $gray-dark;
+        }
+    }
+
+    .o_searchview_autocomplete li.o-selection-focus {
+        background-color: $gray-eee;
+
+        >a {
+            color: $gray-dark;
+        }
+    }
+}

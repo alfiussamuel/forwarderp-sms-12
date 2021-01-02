@@ -1,0 +1,372 @@
+id,name,state_id/id
+kabupaten_id_1,Badung,base.state_id_ba
+kabupaten_id_2,Bangli,base.state_id_ba
+kabupaten_id_3,Buleleng,base.state_id_ba
+kabupaten_id_4,Denpasar,base.state_id_ba
+kabupaten_id_5,Gianyar,base.state_id_ba
+kabupaten_id_6,Jembrana,base.state_id_ba
+kabupaten_id_7,Karangasem,base.state_id_ba
+kabupaten_id_8,Klungkung,base.state_id_ba
+kabupaten_id_9,Tabanan,base.state_id_ba
+kabupaten_id_10,Bangka,base.state_id_bb
+kabupaten_id_11,Bangka Barat,base.state_id_bb
+kabupaten_id_12,Bangka Selatan,base.state_id_bb
+kabupaten_id_13,Bangka Tengah,base.state_id_bb
+kabupaten_id_14,Belitung,base.state_id_bb
+kabupaten_id_15,Belitung Timur,base.state_id_bb
+kabupaten_id_16,Pangkal Pinang,base.state_id_bb
+kabupaten_id_17,Cilegon,base.state_id_bt
+kabupaten_id_18,Lebak,base.state_id_bt
+kabupaten_id_19,Pandeglang,base.state_id_bt
+kabupaten_id_20,Serang,base.state_id_bt
+kabupaten_id_21,Tangerang,base.state_id_bt
+kabupaten_id_22,Tangerang Selatan,base.state_id_bt
+kabupaten_id_23,Bengkulu,base.state_id_be
+kabupaten_id_24,Bengkulu Selatan,base.state_id_be
+kabupaten_id_25,Bengkulu Tengah,base.state_id_be
+kabupaten_id_26,Bengkulu Utara,base.state_id_be
+kabupaten_id_27,Kaur,base.state_id_be
+kabupaten_id_28,Kepahiang,base.state_id_be
+kabupaten_id_29,Lebong,base.state_id_be
+kabupaten_id_30,Muko Muko,base.state_id_be
+kabupaten_id_31,Rejang Lebong,base.state_id_be
+kabupaten_id_32,Seluma,base.state_id_be
+kabupaten_id_33,Bantul,base.state_id_yo
+kabupaten_id_34,Gunung Kidul,base.state_id_yo
+kabupaten_id_35,Kulon Progo,base.state_id_yo
+kabupaten_id_36,Sleman,base.state_id_yo
+kabupaten_id_37,Yogyakarta,base.state_id_yo
+kabupaten_id_38,Jakarta Barat,base.state_id_jk
+kabupaten_id_39,Jakarta Pusat,base.state_id_jk
+kabupaten_id_40,Jakarta Selatan,base.state_id_jk
+kabupaten_id_41,Jakarta Timur,base.state_id_jk
+kabupaten_id_42,Jakarta Utara,base.state_id_jk
+kabupaten_id_43,Kepulauan Seribu,base.state_id_jk
+kabupaten_id_44,Batang Hari,base.state_id_ja
+kabupaten_id_45,Bungo,base.state_id_ja
+kabupaten_id_46,Jambi,base.state_id_ja
+kabupaten_id_47,Kerinci,base.state_id_ja
+kabupaten_id_48,Merangin,base.state_id_ja
+kabupaten_id_49,Muaro Jambi,base.state_id_ja
+kabupaten_id_50,Sarolangun,base.state_id_ja
+kabupaten_id_51,Sungaipenuh,base.state_id_ja
+kabupaten_id_52,Tanjung Jabung Barat,base.state_id_ja
+kabupaten_id_53,Tanjung Jabung Timur,base.state_id_ja
+kabupaten_id_54,Tebo,base.state_id_ja
+kabupaten_id_55,Bandung,base.state_id_jb
+kabupaten_id_56,Bandung Barat,base.state_id_jb
+kabupaten_id_57,Banjar,base.state_id_jb
+kabupaten_id_58,Bekasi,base.state_id_jb
+kabupaten_id_59,Bogor,base.state_id_jb
+kabupaten_id_60,Ciamis,base.state_id_jb
+kabupaten_id_61,Cianjur,base.state_id_jb
+kabupaten_id_62,Cimahi,base.state_id_jb
+kabupaten_id_63,Cirebon,base.state_id_jb
+kabupaten_id_64,Depok,base.state_id_jb
+kabupaten_id_65,Garut,base.state_id_jb
+kabupaten_id_66,Indramayu,base.state_id_jb
+kabupaten_id_67,Karawang,base.state_id_jb
+kabupaten_id_68,Kuningan,base.state_id_jb
+kabupaten_id_69,Majalengka,base.state_id_jb
+kabupaten_id_70,Pangandaran,base.state_id_jb
+kabupaten_id_71,Purwakarta,base.state_id_jb
+kabupaten_id_72,Subang,base.state_id_jb
+kabupaten_id_73,Sukabumi,base.state_id_jb
+kabupaten_id_74,Sumedang,base.state_id_jb
+kabupaten_id_75,Tasikmalaya,base.state_id_jb
+kabupaten_id_76,Banjarnegara,base.state_id_jt
+kabupaten_id_77,Banyumas,base.state_id_jt
+kabupaten_id_78,Batang,base.state_id_jt
+kabupaten_id_79,Blora,base.state_id_jt
+kabupaten_id_80,Boyolali,base.state_id_jt
+kabupaten_id_81,Brebes,base.state_id_jt
+kabupaten_id_82,Cilacap,base.state_id_jt
+kabupaten_id_83,Demak,base.state_id_jt
+kabupaten_id_84,Grobogan,base.state_id_jt
+kabupaten_id_85,Jepara,base.state_id_jt
+kabupaten_id_86,Karanganyar,base.state_id_jt
+kabupaten_id_87,Kebumen,base.state_id_jt
+kabupaten_id_88,Kendal,base.state_id_jt
+kabupaten_id_89,Klaten,base.state_id_jt
+kabupaten_id_90,Kudus,base.state_id_jt
+kabupaten_id_91,Magelang,base.state_id_jt
+kabupaten_id_92,Pati,base.state_id_jt
+kabupaten_id_93,Pekalongan,base.state_id_jt
+kabupaten_id_94,Pemalang,base.state_id_jt
+kabupaten_id_95,Purbalingga,base.state_id_jt
+kabupaten_id_96,Purworejo,base.state_id_jt
+kabupaten_id_97,Rembang,base.state_id_jt
+kabupaten_id_98,Salatiga,base.state_id_jt
+kabupaten_id_99,Semarang,base.state_id_jt
+kabupaten_id_100,Sragen,base.state_id_jt
+kabupaten_id_101,Sukoharjo,base.state_id_jt
+kabupaten_id_102,Surakarta (Solo),base.state_id_jt
+kabupaten_id_103,Tegal,base.state_id_jt
+kabupaten_id_104,Temanggung,base.state_id_jt
+kabupaten_id_105,Wonogiri,base.state_id_jt
+kabupaten_id_106,Wonosobo,base.state_id_jt
+kabupaten_id_107,Bangkalan,base.state_id_ji
+kabupaten_id_108,Banyuwangi,base.state_id_ji
+kabupaten_id_109,Batu,base.state_id_ji
+kabupaten_id_110,Blitar,base.state_id_ji
+kabupaten_id_111,Bojonegoro,base.state_id_ji
+kabupaten_id_112,Bondowoso,base.state_id_ji
+kabupaten_id_113,Gresik,base.state_id_ji
+kabupaten_id_114,Jember,base.state_id_ji
+kabupaten_id_115,Jombang,base.state_id_ji
+kabupaten_id_116,Kediri,base.state_id_ji
+kabupaten_id_117,Lamongan,base.state_id_ji
+kabupaten_id_118,Lumajang,base.state_id_ji
+kabupaten_id_119,Madiun,base.state_id_ji
+kabupaten_id_120,Magetan,base.state_id_ji
+kabupaten_id_121,Malang,base.state_id_ji
+kabupaten_id_122,Mojokerto,base.state_id_ji
+kabupaten_id_123,Nganjuk,base.state_id_ji
+kabupaten_id_124,Ngawi,base.state_id_ji
+kabupaten_id_125,Pacitan,base.state_id_ji
+kabupaten_id_126,Pamekasan,base.state_id_ji
+kabupaten_id_127,Pasuruan,base.state_id_ji
+kabupaten_id_128,Ponorogo,base.state_id_ji
+kabupaten_id_129,Probolinggo,base.state_id_ji
+kabupaten_id_130,Sampang,base.state_id_ji
+kabupaten_id_131,Sidoarjo,base.state_id_ji
+kabupaten_id_132,Situbondo,base.state_id_ji
+kabupaten_id_133,Sumenep,base.state_id_ji
+kabupaten_id_134,Surabaya,base.state_id_ji
+kabupaten_id_135,Trenggalek,base.state_id_ji
+kabupaten_id_136,Tuban,base.state_id_ji
+kabupaten_id_137,Tulungagung,base.state_id_ji
+kabupaten_id_138,Bengkayang,base.state_id_kb
+kabupaten_id_139,Kapuas Hulu,base.state_id_kb
+kabupaten_id_140,Kayong Utara,base.state_id_kb
+kabupaten_id_141,Ketapang,base.state_id_kb
+kabupaten_id_142,Kubu Raya,base.state_id_kb
+kabupaten_id_143,Landak,base.state_id_kb
+kabupaten_id_144,Melawi,base.state_id_kb
+kabupaten_id_145,Pontianak,base.state_id_kb
+kabupaten_id_146,Sambas,base.state_id_kb
+kabupaten_id_147,Sanggau,base.state_id_kb
+kabupaten_id_148,Sekadau,base.state_id_kb
+kabupaten_id_149,Singkawang,base.state_id_kb
+kabupaten_id_150,Sintang,base.state_id_kb
+kabupaten_id_151,Balangan,base.state_id_ks
+kabupaten_id_152,Banjar,base.state_id_ks
+kabupaten_id_153,Banjarbaru,base.state_id_ks
+kabupaten_id_154,Banjarmasin,base.state_id_ks
+kabupaten_id_155,Barito Kuala,base.state_id_ks
+kabupaten_id_156,Hulu Sungai Selatan,base.state_id_ks
+kabupaten_id_157,Hulu Sungai Tengah,base.state_id_ks
+kabupaten_id_158,Hulu Sungai Utara,base.state_id_ks
+kabupaten_id_159,Kotabaru,base.state_id_ks
+kabupaten_id_160,Tabalong,base.state_id_ks
+kabupaten_id_161,Tanah Bumbu,base.state_id_ks
+kabupaten_id_162,Tanah Laut,base.state_id_ks
+kabupaten_id_163,Tapin,base.state_id_ks
+kabupaten_id_164,Barito Selatan,base.state_id_kt
+kabupaten_id_165,Barito Timur,base.state_id_kt
+kabupaten_id_166,Barito Utara,base.state_id_kt
+kabupaten_id_167,Gunung Mas,base.state_id_kt
+kabupaten_id_168,Kapuas,base.state_id_kt
+kabupaten_id_169,Katingan,base.state_id_kt
+kabupaten_id_170,Kotawaringin Barat,base.state_id_kt
+kabupaten_id_171,Kotawaringin Timur,base.state_id_kt
+kabupaten_id_172,Lamandau,base.state_id_kt
+kabupaten_id_173,Murung Raya,base.state_id_kt
+kabupaten_id_174,Palangka Raya,base.state_id_kt
+kabupaten_id_175,Pulang Pisau,base.state_id_kt
+kabupaten_id_176,Seruyan,base.state_id_kt
+kabupaten_id_177,Sukamara,base.state_id_kt
+kabupaten_id_178,Balikpapan,base.state_id_ki
+kabupaten_id_179,Berau,base.state_id_ki
+kabupaten_id_180,Bontang,base.state_id_ki
+kabupaten_id_181,Kutai Barat,base.state_id_ki
+kabupaten_id_182,Kutai Kartanegara,base.state_id_ki
+kabupaten_id_183,Kutai Timur,base.state_id_ki
+kabupaten_id_184,Paser,base.state_id_ki
+kabupaten_id_185,Penajam Paser Utara,base.state_id_ki
+kabupaten_id_186,Samarinda,base.state_id_ki
+kabupaten_id_187,Bulungan (Bulongan),base.state_id_ku
+kabupaten_id_188,Malinau,base.state_id_ku
+kabupaten_id_189,Nunukan,base.state_id_ku
+kabupaten_id_190,Tana Tidung,base.state_id_ku
+kabupaten_id_191,Tarakan,base.state_id_ku
+kabupaten_id_192,Batam,base.state_id_kr
+kabupaten_id_193,Bintan,base.state_id_kr
+kabupaten_id_194,Karimun,base.state_id_kr
+kabupaten_id_195,Kepulauan Anambas,base.state_id_kr
+kabupaten_id_196,Lingga,base.state_id_kr
+kabupaten_id_197,Natuna,base.state_id_kr
+kabupaten_id_198,Tanjung Pinang,base.state_id_kr
+kabupaten_id_199,Bandar Lampung,base.state_id_la
+kabupaten_id_200,Lampung Barat,base.state_id_la
+kabupaten_id_201,Lampung Selatan,base.state_id_la
+kabupaten_id_202,Lampung Tengah,base.state_id_la
+kabupaten_id_203,Lampung Timur,base.state_id_la
+kabupaten_id_204,Lampung Utara,base.state_id_la
+kabupaten_id_205,Mesuji,base.state_id_la
+kabupaten_id_206,Metro,base.state_id_la
+kabupaten_id_207,Pesawaran,base.state_id_la
+kabupaten_id_208,Pesisir Barat,base.state_id_la
+kabupaten_id_209,Pringsewu,base.state_id_la
+kabupaten_id_210,Tanggamus,base.state_id_la
+kabupaten_id_211,Tulang Bawang,base.state_id_la
+kabupaten_id_212,Tulang Bawang Barat,base.state_id_la
+kabupaten_id_213,Way Kanan,base.state_id_la
+kabupaten_id_214,Aceh Barat,base.state_id_ac
+kabupaten_id_215,Aceh Barat Daya,base.state_id_ac
+kabupaten_id_216,Aceh Besar,base.state_id_ac
+kabupaten_id_217,Aceh Jaya,base.state_id_ac
+kabupaten_id_218,Aceh Selatan,base.state_id_ac
+kabupaten_id_219,Aceh Singkil,base.state_id_ac
+kabupaten_id_220,Aceh Tamiang,base.state_id_ac
+kabupaten_id_221,Aceh Tengah,base.state_id_ac
+kabupaten_id_222,Aceh Tenggara,base.state_id_ac
+kabupaten_id_223,Aceh Timur,base.state_id_ac
+kabupaten_id_224,Aceh Utara,base.state_id_ac
+kabupaten_id_225,Banda Aceh,base.state_id_ac
+kabupaten_id_226,Bener Meriah,base.state_id_ac
+kabupaten_id_227,Bireuen,base.state_id_ac
+kabupaten_id_228,Gayo Lues,base.state_id_ac
+kabupaten_id_229,Langsa,base.state_id_ac
+kabupaten_id_230,Lhokseumawe,base.state_id_ac
+kabupaten_id_231,Nagan Raya,base.state_id_ac
+kabupaten_id_232,Pidie,base.state_id_ac
+kabupaten_id_233,Pidie Jaya,base.state_id_ac
+kabupaten_id_234,Sabang,base.state_id_ac
+kabupaten_id_235,Simeulue,base.state_id_ac
+kabupaten_id_236,Subulussalam,base.state_id_ac
+kabupaten_id_237,Bima,base.state_id_nb
+kabupaten_id_238,Dompu,base.state_id_nb
+kabupaten_id_239,Lombok Barat,base.state_id_nb
+kabupaten_id_240,Lombok Tengah,base.state_id_nb
+kabupaten_id_241,Lombok Timur,base.state_id_nb
+kabupaten_id_242,Lombok Utara,base.state_id_nb
+kabupaten_id_243,Mataram,base.state_id_nb
+kabupaten_id_244,Sumbawa,base.state_id_nb
+kabupaten_id_245,Sumbawa Barat,base.state_id_nb
+kabupaten_id_246,Alor,base.state_id_nt
+kabupaten_id_247,Belu,base.state_id_nt
+kabupaten_id_248,Ende,base.state_id_nt
+kabupaten_id_249,Flores Timur,base.state_id_nt
+kabupaten_id_250,Kupang,base.state_id_nt
+kabupaten_id_251,Lembata,base.state_id_nt
+kabupaten_id_252,Manggarai,base.state_id_nt
+kabupaten_id_253,Manggarai Barat,base.state_id_nt
+kabupaten_id_254,Manggarai Timur,base.state_id_nt
+kabupaten_id_255,Nagekeo,base.state_id_nt
+kabupaten_id_256,Ngada,base.state_id_nt
+kabupaten_id_257,Rote Ndao,base.state_id_nt
+kabupaten_id_258,Sabu Raijua,base.state_id_nt
+kabupaten_id_259,Sikka,base.state_id_nt
+kabupaten_id_260,Sumba Barat,base.state_id_nt
+kabupaten_id_261,Sumba Barat Daya,base.state_id_nt
+kabupaten_id_262,Sumba Tengah,base.state_id_nt
+kabupaten_id_263,Sumba Timur,base.state_id_nt
+kabupaten_id_264,Timor Tengah Selatan,base.state_id_nt
+kabupaten_id_265,Timor Tengah Utara,base.state_id_nt
+kabupaten_id_266,Bengkalis,base.state_id_ri
+kabupaten_id_267,Dumai,base.state_id_ri
+kabupaten_id_268,Indragiri Hilir,base.state_id_ri
+kabupaten_id_269,Indragiri Hulu,base.state_id_ri
+kabupaten_id_270,Kampar,base.state_id_ri
+kabupaten_id_271,Kepulauan Meranti,base.state_id_ri
+kabupaten_id_272,Kuantan Singingi,base.state_id_ri
+kabupaten_id_273,Pekanbaru,base.state_id_ri
+kabupaten_id_274,Pelalawan,base.state_id_ri
+kabupaten_id_275,Rokan Hilir,base.state_id_ri
+kabupaten_id_276,Rokan Hulu,base.state_id_ri
+kabupaten_id_277,Siak,base.state_id_ri
+kabupaten_id_278,Majene,base.state_id_sr
+kabupaten_id_279,Mamasa,base.state_id_sr
+kabupaten_id_280,Mamuju,base.state_id_sr
+kabupaten_id_281,Mamuju Utara,base.state_id_sr
+kabupaten_id_282,Polewali Mandar,base.state_id_sr
+kabupaten_id_283,Bantaeng,base.state_id_sn
+kabupaten_id_284,Barru,base.state_id_sn
+kabupaten_id_285,Bone,base.state_id_sn
+kabupaten_id_286,Bulukumba,base.state_id_sn
+kabupaten_id_287,Enrekang,base.state_id_sn
+kabupaten_id_288,Gowa,base.state_id_sn
+kabupaten_id_289,Jeneponto,base.state_id_sn
+kabupaten_id_290,Luwu,base.state_id_sn
+kabupaten_id_291,Luwu Timur,base.state_id_sn
+kabupaten_id_292,Luwu Utara,base.state_id_sn
+kabupaten_id_293,Makassar,base.state_id_sn
+kabupaten_id_294,Maros,base.state_id_sn
+kabupaten_id_295,Palopo,base.state_id_sn
+kabupaten_id_296,Pangkajene Kepulauan,base.state_id_sn
+kabupaten_id_297,Parepare,base.state_id_sn
+kabupaten_id_298,Pinrang,base.state_id_sn
+kabupaten_id_299,Sidenreng Rappang/Rapang,base.state_id_sn
+kabupaten_id_300,Sinjai,base.state_id_sn
+kabupaten_id_301,Soppeng,base.state_id_sn
+kabupaten_id_302,Takalar,base.state_id_sn
+kabupaten_id_303,Tana Toraja,base.state_id_sn
+kabupaten_id_304,Toraja Utara,base.state_id_sn
+kabupaten_id_305,Wajo,base.state_id_sn
+kabupaten_id_306,Agam,base.state_id_sb
+kabupaten_id_307,Bukittinggi,base.state_id_sb
+kabupaten_id_308,Dharmasraya,base.state_id_sb
+kabupaten_id_309,Kepulauan Mentawai,base.state_id_sb
+kabupaten_id_310,Lima Puluh Koto/Kota,base.state_id_sb
+kabupaten_id_311,Padang,base.state_id_sb
+kabupaten_id_312,Padang Panjang,base.state_id_sb
+kabupaten_id_313,Padang Pariaman,base.state_id_sb
+kabupaten_id_314,Pariaman,base.state_id_sb
+kabupaten_id_315,Pasaman,base.state_id_sb
+kabupaten_id_316,Pasaman Barat,base.state_id_sb
+kabupaten_id_317,Payakumbuh,base.state_id_sb
+kabupaten_id_318,Pesisir Selatan,base.state_id_sb
+kabupaten_id_319,Sawah Lunto,base.state_id_sb
+kabupaten_id_320,Sijunjung (Sawah Lunto Sijunjung),base.state_id_sb
+kabupaten_id_321,Solok,base.state_id_sb
+kabupaten_id_322,Solok Selatan,base.state_id_sb
+kabupaten_id_323,Tanah Datar,base.state_id_sb
+kabupaten_id_324,Banyuasin,base.state_id_ss
+kabupaten_id_325,Empat Lawang,base.state_id_ss
+kabupaten_id_326,Lahat,base.state_id_ss
+kabupaten_id_327,Lubuk Linggau,base.state_id_ss
+kabupaten_id_328,Muara Enim,base.state_id_ss
+kabupaten_id_329,Musi Banyuasin,base.state_id_ss
+kabupaten_id_330,Musi Rawas,base.state_id_ss
+kabupaten_id_331,Ogan Ilir,base.state_id_ss
+kabupaten_id_332,Ogan Komering Ilir,base.state_id_ss
+kabupaten_id_333,Ogan Komering Ulu,base.state_id_ss
+kabupaten_id_334,Ogan Komering Ulu Selatan,base.state_id_ss
+kabupaten_id_335,Ogan Komering Ulu Timur,base.state_id_ss
+kabupaten_id_336,Pagar Alam,base.state_id_ss
+kabupaten_id_337,Palembang,base.state_id_ss
+kabupaten_id_338,Prabumulih,base.state_id_ss
+kabupaten_id_339,Asahan,base.state_id_sa
+kabupaten_id_340,Batu Bara,base.state_id_sa
+kabupaten_id_341,Binjai,base.state_id_sa
+kabupaten_id_342,Dairi,base.state_id_sa
+kabupaten_id_343,Deli Serdang,base.state_id_sa
+kabupaten_id_344,Gunungsitoli,base.state_id_sa
+kabupaten_id_345,Humbang Hasundutan,base.state_id_sa
+kabupaten_id_346,Karo,base.state_id_sa
+kabupaten_id_347,Labuhan Batu,base.state_id_sa
+kabupaten_id_348,Labuhan Batu Selatan,base.state_id_sa
+kabupaten_id_349,Labuhan Batu Utara,base.state_id_sa
+kabupaten_id_350,Langkat,base.state_id_sa
+kabupaten_id_351,Mandailing Natal,base.state_id_sa
+kabupaten_id_352,Medan,base.state_id_sa
+kabupaten_id_353,Nias,base.state_id_sa
+kabupaten_id_354,Nias Barat,base.state_id_sa
+kabupaten_id_355,Nias Selatan,base.state_id_sa
+kabupaten_id_356,Nias Utara,base.state_id_sa
+kabupaten_id_357,Padang Lawas,base.state_id_sa
+kabupaten_id_358,Padang Lawas Utara,base.state_id_sa
+kabupaten_id_359,Padang Sidempuan,base.state_id_sa
+kabupaten_id_360,Pakpak Bharat,base.state_id_sa
+kabupaten_id_361,Pematang Siantar,base.state_id_sa
+kabupaten_id_362,Samosir,base.state_id_sa
+kabupaten_id_363,Serdang Bedagai,base.state_id_sa
+kabupaten_id_364,Sibolga,base.state_id_sa
+kabupaten_id_365,Simalungun,base.state_id_sa
+kabupaten_id_366,Tanjung Balai,base.state_id_sa
+kabupaten_id_367,Tapanuli Selatan,base.state_id_sa
+kabupaten_id_368,Tapanuli Tengah,base.state_id_sa
+kabupaten_id_369,Tapanuli Utara,base.state_id_sa
+kabupaten_id_370,Tebing Tinggi,base.state_id_sa
+kabupaten_id_371,Toba Samosir,base.state_id_sa

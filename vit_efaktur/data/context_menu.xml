@@ -1,0 +1,21 @@
+<openerp>
+	<data>
+
+	    <!-- context menu More.. di tree PO -->
+	    <record id="action_assign_efaktur" model="ir.actions.server">
+	        <field name="name">Assign E-Faktur</field>
+	        <field name="condition">True</field>
+	        <field name="model_id" ref="model_account_invoice"/>
+	        <field name="state">code</field>
+	        <field name="code">action = pool.get('account.invoice').action_assign_efaktur(cr, uid, context)</field>
+	    </record>
+
+	    <record id="ir_assign_efaktur_wizard" model="ir.values">
+	        <field eval="'client_action_multi'" name="key2"/>
+	        <field eval="'account.invoice'" name="model"/>
+	        <field name="name"></field>
+	        <field eval="'ir.actions.server,%d'%action_assign_efaktur" name="value"/>
+	    </record>
+		
+	</data>
+</openerp>

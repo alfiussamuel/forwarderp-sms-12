@@ -1,0 +1,425 @@
+@mixin o-full-screen-dropdown {
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column; // height: calc(100vh - #{$o-navbar-height});
+    //max-height: calc(100vh - #{$o-navbar-height});
+    height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 100; // Inline style will override our `top`, so we need !important here
+    //top: $o-navbar-height !important;
+    top: 0 !important;
+    transform: none !important;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/gslab_backend_theme/static/src/font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/gslab_backend_theme/static/src/font/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+body {
+    font-family: "Roboto";
+    color: $gray;
+}
+
+.dropdown-header {
+    color: white !important;
+    text-decoration: none !important;
+    background-color: $gray;
+    font-weight: bolder !important;
+}
+
+.o_loading {
+    background-color: $o-brand-odoo;
+}
+
+.o_main_navbar {
+    background-color: $o-brand-odoo;
+    border-bottom: 1px solid $o-navbar-inverse-link-hover-bg;
+}
+
+.o_main_navbar>a:hover,
+.o_main_navbar>a:focus,
+.o_main_navbar>button:hover,
+.o_main_navbar>button:focus {
+    background-color: $o-brand-odoo-dark;
+    color: inherit;
+}
+
+.o_main_navbar>ul>li>a:hover,
+.o_main_navbar>ul>li>label:hover {
+    background-color: $o-brand-odoo-dark;
+}
+
+.o_main_navbar .show .dropdown-toggle {
+    background-color: $o-brand-odoo-dark;
+}
+
+// Fix color Add file button
+.o_control_panel .o_cp_sidebar .o_hidden_input_file .o_form_binary_form span {
+    color: $gray-dark !important;
+}
+
+// App Dashboard
+// Iconized full screen apps menu
+.o_menu_apps {
+    .dropdown-menu.show {
+        @include o-full-screen-dropdown(); // Display apps in a grid
+        align-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        background: $brand-gradient;
+
+        .search-container {
+            margin-top: 30px;
+        }
+
+        .o-app-icon {
+            height: auto;
+            max-width: 6rem;
+            width: 100%;
+        }
+    }
+}
+
+// add image to background
+//.o_menu_apps .dropdown-menu.show {
+//	background: transparent url('/dashboard') no-repeat scroll center center / cover;
+//}
+
+// Override fa-th-large with fa-th 
+.dropdown>a.full {
+    .fa-th-large::before {
+        content: "\f00a";
+    }
+}
+
+.o_menu_apps .full {
+    width: 46px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.o-app-name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+.o_menu_apps .dropdown-menu.show .o-app-icon {
+    padding: 20px 0 0;
+}
+
+.o_menu_apps .dropdown-menu.show .o-app-icon:hover {
+    box-shadow: 0 8px 15px -10px black;
+    transform: translateY(-1px);
+}
+
+.search-container {
+    .search-input {
+        ::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: rgba(255, 255, 255, 0.8);
+            opacity: 1;
+        }
+
+        ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: rgba(255, 255, 255, 0.8);
+            opacity: 1;
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        ::placeholder {
+            /* Most modern browsers support this now. */
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        padding-top: 3px;
+        border-radius: 3px;
+        background: transparent;
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: none !important;
+            color: #ffffff !important;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        .input-group-prepend {
+            color: #ffffff !important;
+        }
+
+        .form-control:focus,
+        .form-control:active {
+            outline-width: 0;
+            outline: none !important;
+        }
+    }
+}
+
+.breadcrumb-item:active {
+    color: $gray-dark !important;
+}
+
+.dropdown-item.o_app {
+    background: transparent;
+}
+
+.o-menu-search-result {
+    color: #fff;
+}
+
+a {
+    color: $o-brand-primary;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+// Add product, section, note, configurator line
+.o_field_x2many_list_row_add>a {
+    color: $o-brand-primary !important;
+}
+
+.o_field_x2many_list_row_add>a:hover {
+    color: $o-brand-primary-dark !important;
+    font-weight: bold;
+}
+
+a:hover {
+    color: $o-brand-primary-dark;
+    text-decoration: none;
+}
+
+.o_control_panel {
+    background-color: #ffffff;
+}
+
+.breadcrumb {
+    background-color: inherit;
+}
+
+// Input
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea,
+select,
+.o_form_view.o_form_editable .o_form_field_many2manytags,
+.o_searchview {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.o_web_client input:focus,
+.o_web_client textarea:focus,
+.o_web_client select:focus {
+    outline: none;
+    border-bottom: 2px solid $o-brand-odoo;
+}
+
+.o_input {
+    border: 1px solid #ccc;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: $gray;
+}
+
+
+.badge-primary {
+    background-color: $o-brand-primary !important;
+}
+
+.o_field_widget {
+    &.o_field_many2one .o_external_button {
+        color: $o-brand-primary;
+    }
+}
+
+.o_required_modifier {
+
+    &.o_input,
+    .o_input {
+        background-color: lighten(whitesmoke, 0%) !important; //background-color: white !important;
+    }
+}
+
+.input-group-text {
+    background-color: transparent;
+    color: #fff;
+    border: 0px;
+}
+
+.ui-autocomplete .ui-menu-item.ui-state-focus {
+    background-color: #dee2e6;
+}
+
+.ui-autocomplete .ui-menu-item {
+    &.ui-state-focus {
+        background-color: #dee2e6;
+    }
+
+    &.o_m2o_dropdown_option>a {
+        color: $o-brand-odoo;
+    }
+
+    &.ui-state-focus>a,
+    &.ui-state-focus.o_m2o_dropdown_option>a {
+        color: white;
+    }
+}
+
+.ui-menu-item a:hover,
+.ui-menu-item a:focus {
+    color: #666666 !important;
+}
+
+.ui-autocomplete .ui-menu-item.ui-state-focus a {
+    color: #666666 !important;
+}
+
+.o_form_view .oe_button_box .oe_stat_button .o_stat_info .o_stat_value {
+    color: $o-brand-odoo;
+}
+
+.o_form_view .oe_button_box .oe_stat_button {
+    font-weight: 600;
+    color: $gray !important;
+}
+
+.o_form_view .o_horizontal_separator {
+    color: #666666;
+    font-weight: bold;
+}
+
+.o_catch_attention {
+    position: relative;
+    z-index: 1;
+    animation: catchAttention 200ms ease 0s infinite normal;
+}
+
+@keyframes catchAttention {
+    0% {
+        outline: 0px solid fade-out($o-brand-primary, 0.0);
+    }
+
+    100% {
+        outline: 20px solid fade-out($o-brand-primary, 1.0);
+    }
+}
+
+// Kanban
+.o_kanban_view.o_kanban_grouped .o_kanban_mobile_tabs .o_kanban_mobile_tab.o_current {
+    border-bottom-color: $o-brand-primary !important
+}
+
+// Tab on settings
+.o_setting_container .settings_tab .selected {
+    box-shadow: inset 3px 0 0 $o-brand-primary !important;
+}
+
+@media (max-width: 767.98px) {
+    .o_base_settings .o_setting_container .settings_tab .tab:after {
+        background: $o-brand-primary !important
+    }
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: $o-brand-primary;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23FFFFFF' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+
+.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
+    background-color: $o-brand-primary;
+}
+
+.custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before {
+    background-color: rgba(1, 162, 157, 0.5);
+}
+
+.custom-checkbox .custom-control-input:disabled:indeterminate~.custom-control-label::before {
+    background-color: rgba(1, 162, 157, 0.5);
+    color: white;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: $o-brand-primary;
+    color: white;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23FFFFFF'/%3E%3C/svg%3E");
+}
+
+.custom-radio .custom-control-input:disabled:checked~.custom-control-label::before {
+    background-color: rgba(1, 162, 157, 0.5);
+    color: white;
+}
+
+@include media-breakpoint-down(sm) {
+    .o_control_panel {
+
+        // Hide all but 2 last breadcrumbs, and render 2nd-to-last as arrow
+        .breadcrumb-item {
+            &:nth-last-of-type(2) {
+                &::before {
+                    //color: var(--primary);
+                    color: $o-brand-odoo;
+                    content: "\f048"; // .fa-step-backward
+                    cursor: pointer;
+                    font-family: FontAwesome;
+                }
+
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .modal.o_technical_modal.o_modal_full .modal-dialog .modal-content .modal-header {
+        background: $o-brand-primary;
+    }
+
+    .o_form_view .oe_button_box .oe_stat_button {
+        font-weight: normal;
+        color: $gray !important;
+    }
+
+}

@@ -1,0 +1,57 @@
+// Listview
+.o_list_view.table {
+    border: none;
+}
+
+.o_list_view.table th {
+    border: none;
+}
+
+.o_list_view.table thead {
+    background-color: transparent;
+}
+
+.o_list_view.table thead>tr>th.o_column_sortable:hover {
+    background-color: transparent;
+}
+
+.o_list_view.table tbody tr.o_group_header {
+    background-image: none;
+    border-top: 1px solid #e2e2e0;
+}
+
+.o_list_view tbody:first-of-type>tr:first-child:not(.o_group_header) {
+    box-shadow: inset 0px 5px 10px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* Disable rows in widget tree view 
+.o_form_view .o_field_widget .o_list_view.table-striped>tbody>tr>td {
+    border-top: none !important;
+}
+*/
+.o_content>div>.table-responsive>.o_list_view.table>thead>tr> :not(:empty) {
+    padding: 10px 4px;
+}
+
+.o_content>div>.table-responsive>.o_list_view.table>thead>tr>th.o_column_sortable:not(:empty) {
+    padding-right: 13px;
+}
+
+.o_content>div>.table-responsive>.o_list_view.table>thead>tr>th.o_column_sortable:not(:empty):last-child {
+    padding-right: 29px !important;
+}
+
+.o_content>div>.table-responsive>.o_list_view.table>tbody>tr:not(.o_list_view_grouped)>td {
+    padding: 5px 4px;
+}
+
+.o_list_view tfoot {
+    font-weight: bold;
+    background-color: white;
+    border-top: 2px solid #e2e2e0;
+    border-bottom: 1px solid #e2e2e0;
+}
+
+.o_content>div>.table-responsive>.o_list_view.table>tfoot>tr> :not(:empty) {
+    padding: 10px 4px;
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		
+		<record id="view_partner_address_form_aos_partner" model="ir.ui.view">
+            <field name="name">res.partner.form.address.aos_partner</field>
+            <field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_address_form" />
+			<field name="arch" type="xml">
+				<field name="street2" position="after">      
+					<div class="address_format">						
+						<field name="blok" placeholder="Blok" style="width: 22%%"/>
+						<field name="nomor" placeholder="No." style="width: 22%%"/>
+	                    <field name="rt" placeholder="RT" style="width: 25%%"/>/
+	                    <field name="rw" placeholder="RW" style="width: 25%%"/>
+	                </div>
+	                <div class="address_additional_format">
+                        <field name="kelurahan_id" options='{"no_open": True, "no_create": True}' placeholder="Kelurahan" style="width: 33%%"/>
+                        <field name="kecamatan_id_new" options='{"no_open": True, "no_create": True}' placeholder="Kecamatan" style="width: 33%%"/>
+                        <field name="kabupaten_id" options='{"no_open": True, "no_create": True}' class="oe_no_button" placeholder="Kabupaten" style="width: 32%%"/>
+                    </div>
+	           	</field>
+			</field>
+		</record>
+		
+		<record id="dos_view_partner_form" model="ir.ui.view">
+        	<field name="name">dos.res.partner.custom</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_form" />
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='type']" position="after">
+	        		<field name="is_npwp"/>
+					<field name="code_transaction" attrs="{'required': [('is_npwp','=',True)]}"/>
+					<field name="npwp" placeholder="00.000.000.0-000.000" attrs="{'required': [('is_npwp','=',True)], 'invisible': [('is_npwp','!=',True)]}" />
+					<field name="ktp" placeholder="NIK" attrs="{'required': [('npwp','=','00.000.000.0-000.000')]}"/>
+	        	</xpath>
+				<xpath expr="//field[@name='email']" position="attributes">
+	        		<attribute name="placeholder">info@alphasoft.co.id</attribute>
+	        	</xpath>
+				<field name="street2" position="after">      
+					<div class="address_format">
+						<field name="blok" placeholder="Blok" style="width: 22%%" attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
+						<field name="nomor" placeholder="No." style="width: 22%%" attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
+	                    <field name="rt" placeholder="RT" style="width: 25%%" attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>/
+	                    <field name="rw" placeholder="RW" style="width: 25%%" attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
+	                </div>
+	                <div class="address_additional_format">
+                        <field name="kelurahan_id" options='{"no_open": True, "no_create": True}' placeholder="Kelurahan" style="width: 33%%" attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
+                        <field name="kecamatan_id_new" options='{"no_open": True, "no_create": True}' placeholder="Kecamatan" style="width: 33%%" attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
+                        <field name="kabupaten_id" options='{"no_open": True, "no_create": True}' class="oe_no_button" placeholder="Kabupaten" style="width: 32%%" attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
+                    </div>
+	           	</field>
+                <field name="state_id" position="attributes">
+                	<attribute name="options">{"no_open": True, "no_create": True}</attribute>
+                	<attribute name="string">Province</attribute>
+                </field>
+                <xpath expr="//field[@name='child_ids']/form/sheet/group/group/label[@for='street']" position="before">  
+					<field name="code_transaction" attrs="{'required': [('type','=','npwp')], 'invisible': [('type','!=','npwp')]}"/>
+					<field name="npwp" placeholder="00.000.000.0-000.000" attrs="{'required': [('type','=','npwp')], 'invisible': [('type','!=','npwp')]}"/>
+				</xpath>
+                <xpath expr="//field[@name='child_ids']/form/sheet/group/group[2]/field[@name='name']" position="attributes">  
+					<attribute name="attrs">{'required' : [('type', 'in', ('contact','npwp'))]}</attribute>
+				</xpath>
+                <xpath expr="//div[@name='div_address']/field[@name='street2']" position="after">      
+					<div class="address_format">
+						<field name="blok" placeholder="Blok" style="width: 20%%"/>
+						<field name="nomor" placeholder="No." style="width: 20%%"/>
+	                    <field name="rt" placeholder="RT" style="width: 20%%"/>/
+	                    <field name="rw" placeholder="RW" style="width: 20%%"/>
+	                </div>
+	                <div class="address_additional_format">
+                        <field name="kelurahan_id" options='{"no_open": True, "no_create": True}' placeholder="Kelurahan" style="width: 33%%"/>
+                        <field name="kecamatan_id_new" options='{"no_open": True, "no_create": True}' placeholder="Kecamatan" style="width: 33%%"/>
+                        <field name="kabupaten_id" options='{"no_open": True, "no_create": True}' class="oe_no_button" placeholder="Kabupaten" style="width: 32%%"/>
+                    </div>                	
+				</xpath>				
+                <xpath expr="//field[@name='child_ids']/kanban/templates/t/div/div[2]/field[@name='name']" position="before">  
+					<strong><u><field name="type"/></u></strong><br/>
+				</xpath>
+                <xpath expr="//field[@name='child_ids']/kanban/templates/t/div/div[2]/field[@name='name']" position="after">  
+					<div t-if="record.type.raw_value=='npwp'"><field name="npwp"/></div>
+				</xpath>
+			</field>
+		</record>
+		
+	</data>
+</openerp>

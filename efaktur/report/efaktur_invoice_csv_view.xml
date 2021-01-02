@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="action_efaktur_account_invoice_csv" model="ir.actions.report.xml">
+      <field name="name">E-Faktur</field>
+      <field name="model">account.invoice</field>
+      <field name="type">ir.actions.report.xml</field>
+      <field name="report_name">efaktur.account.invoice.csv</field>
+      <field name="report_type">csv</field>
+      <field name="auto" eval="False"/>
+    </record>
+
+    <record model="ir.values" id="action_efaktur_account_invoice_csv_values">
+      <field name="name">E-Faktur</field>
+      <field name="key2">client_action_multi</field>
+      <field name="value" eval="'ir.actions.report.xml,' +str(ref('action_efaktur_account_invoice_csv'))" />
+      <field name="model">account.invoice</field>
+    </record>  
+    
+    <record id="action_efaktur_product_product_csv" model="ir.actions.report.xml">
+      <field name="name">E-Faktur OB</field>
+      <field name="model">product.template</field>
+      <field name="type">ir.actions.report.xml</field>
+      <field name="report_name">efaktur.product.product.csv</field>
+      <field name="report_type">csv</field>
+      <field name="auto" eval="False"/>
+    </record>
+
+    <record model="ir.values" id="action_efaktur_product_product_csv_values">
+      <field name="name">E-Faktur OB</field>
+      <field name="key2">client_action_multi</field>
+      <field name="value" eval="'ir.actions.report.xml,' +str(ref('action_efaktur_product_product_csv'))" />
+      <field name="model">product.template</field>
+    </record> 
+    
+    <record id="action_efaktur_res_partner_csv" model="ir.actions.report.xml">
+      <field name="name">E-Faktur LT</field>
+      <field name="model">res.partner</field>
+      <field name="type">ir.actions.report.xml</field>
+      <field name="report_name">efaktur.res.partner.csv</field>
+      <field name="report_type">csv</field>
+      <field name="auto" eval="False"/>
+    </record>
+
+    <record model="ir.values" id="action_efaktur_res_partner_csv_values">
+      <field name="name">E-Faktur LT</field>
+      <field name="key2">client_action_multi</field>
+      <field name="value" eval="'ir.actions.report.xml,' +str(ref('action_efaktur_res_partner_csv'))" />
+      <field name="model">res.partner</field>
+    </record> 
+    
+  </data>
+</openerp>

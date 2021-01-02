@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="vit_inv_efaktur" inherit_id="account.report_invoice_document">
+
+            <xpath expr="//table" position="before">
+                <div class="row mt32 mb32">
+                    <div name="nomor_efaktur" class="col-xs-5" t-if="o.efaktur_id">
+                        <strong>NSFP:</strong>
+                        <span t-raw="o.prefix_berikat"/> <span t-raw="o.efaktur_id.name"/>
+                    </div>
+                </div>
+
+            </xpath>
+
+        </template>
+
+    </data>
+</openerp>

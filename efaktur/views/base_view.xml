@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    	<!-- Province -->
+    	<menuitem id="menu_localisation_fin" name="Localization" parent="account.menu_finance_configuration" sequence="5" groups="account.group_account_invoice"/>
+        <menuitem action="base.action_country" id="menu_country_partner" parent="menu_localisation_fin" sequence="1" groups="account.group_account_invoice"/>
+        <menuitem action="base.action_country_group" id="menu_country_group_fin" name="Country Group" parent="menu_localisation_fin" sequence="2" groups="account.group_account_invoice"/>
+        
+    	<record id="view_country_state_kabupaten_tree" model="ir.ui.view">
+            <field name="name">res.country.state.tree</field>
+            <field name="model">res.country.state</field>
+			<field name="inherit_id" ref="base.view_country_state_tree" />
+            <field name="arch" type="xml">
+                <field name="country_id" position="after">               
+                    <field name="kabupaten_line"/>                	
+                </field>
+            </field>
+        </record>
+    	<record id="view_country_state_kabupaten_form" model="ir.ui.view">
+            <field name="name">res.country.state.form</field>
+            <field name="model">res.country.state</field>
+			<field name="inherit_id" ref="base.view_country_state_form" />
+            <field name="arch" type="xml">
+                <field name="country_id" position="after">               
+                    <field name="kabupaten_line" widget="many2many">
+                    	<tree string="Kabupaten">
+                    		<field name="name"/>
+                    	</tree>
+                    </field>                	
+                </field>
+            </field>
+        </record>
+    	<record id="base.action_country_state" model="ir.actions.act_window">
+            <field name="name">Province</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.country.state</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="base.view_country_state_tree"/>
+            <field name="help">If you are working on the American market, you can manage the different federal states you are working on from here. Each state is attached to one country.</field>
+        </record>
+        <menuitem action="base.action_country_state" id="menu_country_state_partner_fin" parent="menu_localisation_fin" sequence="3" groups="account.group_account_invoice"/>
+    	<!-- Kabupaten -->
+        <record id="view_kabupaten_tree" model="ir.ui.view">
+            <field name="name">res.kabupaten.tree</field>
+            <field name="model">res.kabupaten</field>
+            <field name="arch" type="xml">
+                <tree string="Kabupaten">      
+                    <field name="name"/>              
+                    <field name="state_id"/>
+                    <field name="kecamatan_line" nolabel="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_kabupaten_form" model="ir.ui.view">
+            <field name="name">res.kabupaten.form</field>
+            <field name="model">res.kabupaten</field>
+            <field name="arch" type="xml">
+                <form string="Kabupaten">
+                    <group>
+                        <group>
+                            <field name="state_id"/>       
+                            <field name="name"/>  
+                        </group>
+                    </group>         
+					<field name="kecamatan_line" widget="many2many" nolabel="1">
+						<tree string="Kecamatan">
+							<field name="name"/>
+						</tree>
+					</field>            
+                </form>
+            </field>
+        </record>
+
+        <record id="action_kabupaten" model="ir.actions.act_window">
+            <field name="name">Kabupaten</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.kabupaten</field>
+            <field name="view_type">form</field>
+            <field name="help">Daftar Kabupaten Seluruh Indonesia</field>
+        </record>
+		
+        <menuitem action="action_kabupaten" id="menu_kabupaten_list_view" parent="menu_localisation_fin" sequence="4" groups="account.group_account_invoice"/>
+
+        <!-- Kecamatan -->
+        <record id="view_kecamatan_tree" model="ir.ui.view">
+            <field name="name">res.kecamatan.tree</field>
+            <field name="model">res.kecamatan</field>
+            <field name="arch" type="xml">
+                <tree string="Kecamatan">                    
+                    <field name="state_id"/>
+                    <field name="kabupaten_id"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_kecamatan_form" model="ir.ui.view">
+            <field name="name">res.kecamatan.form</field>
+            <field name="model">res.kecamatan</field>
+            <field name="arch" type="xml">
+                <form string="Kecamatan">
+                    <group>
+                        <field name="state_id"/>      
+                        <field name="kabupaten_id"/>           
+                        <field name="name"/>
+                    </group>                 
+                    <field name="kelurahan_line" colspan="4"/>   
+                </form>
+            </field>
+        </record>
+
+        <record id="action_kecamatan" model="ir.actions.act_window">
+            <field name="name">Kecamatan</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.kecamatan</field>
+            <field name="view_type">form</field>
+            <field name="help">Daftar Kecamatan Seluruh Indonesia</field>
+        </record>
+
+        <menuitem action="action_kecamatan" id="menu_kecamatan_list_view" parent="menu_localisation_fin" sequence="5" groups="account.group_account_invoice"/>
+    	<!-- Kecamatan -->
+        <record id="view_kelurahan_tree" model="ir.ui.view">
+            <field name="name">res.kelurahan.tree</field>
+            <field name="model">res.kelurahan</field>
+            <field name="arch" type="xml">
+                <tree string="Kelurahan">          
+                    <field name="zip"/>    
+                    <field name="name"/>         
+                    <field name="kecamatan_id"/>
+                    <field name="kabupaten_id"/>   
+                    <field name="state_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_kelurahan_form" model="ir.ui.view">
+            <field name="name">res.kelurahan.form</field>
+            <field name="model">res.kelurahan</field>
+            <field name="arch" type="xml">
+                <form string="Kelurahan">
+                    <group>
+                        <field name="name"/>      
+                        <field name="zip"/>        
+	                    <field name="kecamatan_id"/>
+	                    <field name="kabupaten_id"/>   
+	                    <field name="state_id"/>
+                    </group>                    
+                </form>
+            </field>
+        </record>
+
+        <record id="action_kelurahan" model="ir.actions.act_window">
+            <field name="name">Kelurahan</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.kelurahan</field>
+            <field name="view_type">form</field>
+            <field name="help">Daftar Kelurahan Seluruh Indonesia</field>
+        </record>
+
+        <menuitem action="action_kelurahan" id="menu_kelurahan_list_view" parent="menu_localisation_fin" sequence="6" groups="account.group_account_invoice"/>
+        	
+    </data>
+</openerp>

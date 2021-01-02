@@ -1,0 +1,147 @@
+/* focus on btn */
+
+// Buttons
+.btn {
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+
+    &:focus,
+    &.focus {
+        outline: 0;
+        box-shadow: $gslab-btn-focus-box-shadow;
+    }
+
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+    color: #fff;
+    background-color: $o-brand-primary;
+    border-color: $o-brand-primary;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $o-brand-primary;
+    border-color: $o-brand-primary;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: $o-brand-primary-dark;
+    border-color: $o-brand-primary-dark;
+}
+
+.btn-primary:active {
+    color: #fff;
+    background-color: $o-brand-primary !important;
+    border-color: $o-brand-primary !important;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+    color: $o-brand-primary !important;
+    border: none; //border: 1px solid $gray-light ;
+}
+
+.oe_stat_button {
+    text-transform: none;
+    font-weight: normal;
+}
+
+.o_cp_pager {
+    .btn-secondary {
+        border: none;
+        color: $gray-dark !important;
+        font-weight: normal;
+    }
+}
+
+.o_cp_switch_buttons {
+    .btn-secondary {
+        border: none;
+        color: $gray-dark !important;
+        font-weight: normal;
+    }
+
+    .btn-secondary:hover {
+        color: $o-brand-primary !important;
+    }
+}
+
+.btn:active,
+.btn.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: $gray-eee !important;
+}
+
+.btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: $gray-eee !important;
+}
+
+.btn-group.show {
+    .btn-primary {
+        color: #fff;
+        background-color: $o-brand-primary !important;
+        border-color: $o-brand-primary !important;
+    }
+}
+
+.btn-link {
+    text-transform: none;
+    color: $o-brand-primary;
+}
+
+.btn-link:hover {
+    color: $o-brand-primary-dark;
+}
+
+.o_form_view .o_form_statusbar>.o_statusbar_status>.o_arrow_button.btn-primary.disabled {
+    color: $o-brand-odoo;
+}
+
+.o_form_view .o_form_statusbar>.o_statusbar_status>.o_arrow_button:not(.disabled):hover {
+    color: $o-brand-odoo;
+}
+
+.o_dropdown_toggler_btn,
+.o_dropdown_toggler_btn:hover,
+.o_dropdown_toggler_btn:focus,
+.o_dropdown_toggler_btn:hover,
+.o_dropdown_toggler_btn:focus,
+.btn-icon,
+.o_graph_button {
+    text-transform: none !important;
+    color: $gray-dark !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.dropdown-menu {
+    border-radius: 0px;
+}
+
+.oe_highlight {
+    color: #ffffff !important;
+    background-color: $o-brand-odoo !important;
+}
+
+.o_external_button {
+    color: $o-brand-odoo !important;
+    background: #ffffff;
+}
+
+.o_button_icon {
+    color: $gray !important;
+}
+
+.o_cp_switch_buttons {
+    .btn-sm {
+        color: $gray-dark !important;
+    }
+}

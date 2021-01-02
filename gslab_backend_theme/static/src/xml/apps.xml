@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2018 Tecnativa - Jairo Llopis
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<template>
+    <t t-extend="AppsMenu">
+        <!-- Search bar -->
+        <!--
+        <t t-jquery=".input-group-prepend" t-operation="before">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <i class="fa fa-th fa-2x" />
+                </div>
+            </div>
+        </t>
+        -->
+        <t t-jquery=".search-container" t-operation="replace">
+            <div class="search-container form-row align-items-center mb-4 col-12">
+                <div class="search-input col-md-12 ml-auto mr-auto mb-2">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-th fa-lg" />
+                            </div>
+                        </div>
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-search fa-lg" />
+                            </div>
+                        </div>
+                        <input type="input" placeholder="Search menus..." class="form-control" style="outline:none !important" />
+                    </div>
+                </div>
+                <div class="search-results col-md-12 ml-auto mr-auto" />
+            </div>
+        </t>
+    </t>
+</template>

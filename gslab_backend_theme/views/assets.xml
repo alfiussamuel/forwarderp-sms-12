@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2016 LasLabs Inc.
+    @author Dave Lasley <dave@laslabs.com>
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+-->
+<odoo>
+    <template id="assets_backend" name="Ooops Backend Theme Assets" inherit_id="web.assets_backend">
+        <xpath expr=".">
+            <link rel="stylesheet" href="/gslab_backend_theme/static/src/css/colors.scss" />
+            <link rel="stylesheet" href="/gslab_backend_theme/static/src/css/variables.scss" />
+            <link rel="stylesheet" href="/gslab_backend_theme/static/src/css/web.scss" />
+            <link rel="stylesheet" href="/gslab_backend_theme/static/src/css/button.scss" />
+            <link rel="stylesheet" href="/gslab_backend_theme/static/src/css/calendar.scss" />
+            <link rel="stylesheet" href="/gslab_backend_theme/static/src/css/list.scss" />
+            <link rel="stylesheet" href="/gslab_backend_theme/static/src/css/search.scss" />
+            <link rel="stylesheet" href="/gslab_backend_theme/static/src/css/nav_tab.scss" />
+            <link rel="stylesheet" href="/gslab_backend_theme/static/src/css/form.scss" />
+            <link rel="stylesheet" href="/gslab_backend_theme/static/src/css/tooltip.scss" />
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,32 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* backend_debranding_v12
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: backend_debranding_v12
+#: model:ir.model,name:backend_debranding_v11.model_mail_template
+msgid "Email Templates"
+msgstr ""
+
+#. module: backend_debranding_v11
+#: code:addons/backend_debranding_v12/models/mail_template.py:25
+#, python-format
+msgid "Odoo"
+msgstr ""
+
+#. module: backend_debranding_v12
+#: code:addons/backend_debranding_v12/models/mail_template.py:24
+#, python-format
+msgid "using"
+msgstr ""
+

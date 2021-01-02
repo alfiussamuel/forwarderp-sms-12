@@ -1,0 +1,27 @@
+//$o-enterprise-color: #875A7B;
+//$o-enterprise-primary-color: #00A09D;
+//$o-community-color: #7E4861; // #025c7c; #004958
+//$o-community-primary-color: #01A29D; // #078FBC; #008699
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%);
+$gray-dark: #666;
+$gray: #777;
+$gray-light: #AEA79F;
+$gray-lighter: lighten($gray-base, 93.5%);
+$gray-lighter-darker: #d9d7d7;
+$o-main-text-color: #c4bbbb;
+$gray-eee: #eee;
+$gray-eee-lighter: #f8f9fa;
+$o-brand-odoo: $o-community-color;
+$o-brand-primary: $o-community-primary-color;
+$o-brand-odoo-dark: darken($o-brand-odoo, 10%);
+$o-brand-primary-dark: darken($o-brand-primary, 10%);
+$o-navbar-inverse-link-hover-bg: darken($o-brand-odoo, 3%);
+$link-color: darken($o-brand-primary, 8%);
+$o-brand-gradient-start: lighten($o-brand-odoo-dark, 10%);
+$o-brand-gradient-end: lighten($o-brand-odoo-dark, 30%);
+$brand-gradient: linear-gradient(135deg, $o-brand-gradient-start, $o-brand-gradient-end);
+$o-statbutton-height: 40px;
+$o-statbutton-spacing: 6px;
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba($o-brand-primary, .50);
+$gslab-btn-focus-box-shadow: $input-btn-focus-box-shadow;

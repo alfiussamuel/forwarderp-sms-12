@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_kabupaten_group_all,res_kabupaten group_user_all,model_res_kabupaten,,1,0,0,0
+access_res_kecamatan_group_all,res_kecamatan group_user_all,model_res_kecamatan,,1,0,0,0
+access_res_kelurahan_group_all,res_kelurahan group_user_all,model_res_kelurahan,,1,0,0,0
+access_nomor_faktur_pajak_group_account_user,nomor_faktur_pajak group_account_user,model_nomor_faktur_pajak,account.group_account_user,1,1,1,1
