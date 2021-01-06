@@ -30,23 +30,23 @@
 				<div class="page">									
 					<strong>
 						Faktur Penjualan
-					</strong>					
-					<br/>										
+					</strong>
 					<table>
 						<tr>
 							<td width="300px" style="font-style:10px;padding:5px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;">
 								Kepada Yth
 							</td>
-							<td width="200px"></td>
-							<td width="130px">
+							<td width="180px"></td>
+							<td width="130px" style="font-style:10px;">
 								Nomor Transaksi
 							</td>											
-							<td width="150px" style="padding:5px;">
+							<td width="150px" style="padding:5px;font-style:10px;">
 								: <span t-field="o.number"/>
 							</td>			
 						</tr>
 						<tr>							
-							<td width="400px" rowspan="2" style="font-style:10px;padding:5px;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;">
+							<td width="400px" rowspan="2" 
+								style="font-style:10px;padding:5px;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;">
 								<strong><span t-field="o.partner_id.name"/><br/></strong>
 								<t t-if="o.partner_id.owner_name"><span t-field="o.partner_id.owner_name"/><br/></t>
 								<t t-if="o.partner_id.mobile"><span t-field="o.partner_id.mobile"/><br/></t>
@@ -56,7 +56,7 @@
 								<t t-if="o.partner_id.street"><span t-field="o.partner_id.street2"/><br/></t>
 								<strong><t t-if="o.partner_id.city"><span t-field="o.partner_id.city"/></t></strong>								
 							</td>							
-							<td width="200px"></td>
+							<td width="180px"></td>
 							<td width="130px" style="font-style:10px;">
 								Tanggal Transaksi
 							</td>											
@@ -65,7 +65,7 @@
 							</td>						               
 						</tr>
 						<tr>																
-							<td width="200px"></td>
+							<td width="180px"></td>
 							<td width="130px" style="font-style:10px;">
 								Salesman
 							</td>											
