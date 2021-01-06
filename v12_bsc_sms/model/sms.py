@@ -700,6 +700,7 @@ class AccountInvoice(models.Model):
     amount_usd = fields.Float('Amount USD')
     attachment_id = fields.Binary('Attachment', attachment=True)
     total_qty = fields.Integer(compute="_get_total_qty", string='Total Qty')
+    new_partner_id = fields.Many2one('res.partner', 'New Partner')
     
     @api.depends('invoice_line_ids')
     def _get_total_qty(self):

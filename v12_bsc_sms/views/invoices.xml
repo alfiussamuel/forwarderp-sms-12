@@ -2,7 +2,7 @@
 <odoo>
     <data>
 		
-		<template id="sale.report_invoice_document_inherit_sale">
+		<!-- <template id="sale.report_invoice_document_inherit_sale">
 	        <xpath expr="//address" position="attributes">
 	            <attribute name="groups">!sale.group_delivery_invoice_address</attribute>
 	        </xpath>
@@ -19,14 +19,13 @@
 	            <div t-field="o.partner_id"
 	                t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' groups="sale.group_delivery_invoice_address"/>
 	        </xpath>
-	    </template>
+	    </template> -->
 
         <template id="account.report_invoice_document">
         	<t t-call="web.external_layout">
 	        	<t t-set="o" t-value="o.with_context(lang=lang)"/>
 	        	<t t-set="address">
-	                <address t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
-	                <div t-if="o.partner_id.vat" class="mt16"><t t-esc="o.company_id.country_id.vat_label or 'Tax ID'"/>: <span t-field="o.partner_id.vat"/></div>
+	                <address t-field="o.new_partner_id"/>
 	            </t>
 				<div class="page">									
 					<strong>
