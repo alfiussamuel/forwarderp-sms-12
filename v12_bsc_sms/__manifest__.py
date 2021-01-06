@@ -3,7 +3,7 @@
     'version' : '10',    
     'category': 'Custom',    
     'author' :'Alfius Samuel Sutopo',        
-    'depends' : ['product','stock', 'sale', 'account', 'base', 'report'],
+    'depends' : ['product','stock', 'sale', 'account', 'base'],
     'data': [                    
         'views/sms_view.xml',
         'views/sms_menu.xml',    
