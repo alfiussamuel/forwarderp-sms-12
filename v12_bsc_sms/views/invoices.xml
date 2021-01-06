@@ -13,6 +13,10 @@
         <!-- <template id="report_invoice_document_bsc_sms" inherit_id="account.report_invoice_document"> -->
         <template id="account.report_invoice_document">
         	<t t-set="o" t-value="o.with_context(lang=lang)"/>
+        	<t t-set="address">
+                <!-- <address t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+                <div t-if="o.partner_id.vat" class="mt16"><t t-esc="o.company_id.country_id.vat_label or 'Tax ID'"/>: <span t-field="o.partner_id.vat"/></div> -->
+            </t>
             <!-- <xpath expr="//div[@class='page']" position="replace"> -->
 			<div class="page">									
 				<strong>
