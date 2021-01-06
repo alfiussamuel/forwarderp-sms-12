@@ -27,13 +27,11 @@
 	        	<t t-set="address">
 	                <address t-field="o.new_partner_id"/>
 	            </t>
-				<div class="page">									
+				<div class="page">
 					<table>
-
-					</table>
-					<table>
-						<tr style="padding:3px;font-style:12px;text-align:left;border:0px;">
-							<td colspan="4">
+						<tr>
+							<td colspan="4" 
+								style="padding:3px;font-style:12px;text-align:left;border:0px;">
 								<strong>Faktur Penjualan</strong>
 							</td>
 						</tr>
