@@ -134,7 +134,7 @@
 	                    			<strong>PPN 10%</strong>
 	                    		</td>
 	                    		<td style="font-size:14px;border:1px solid black;padding:5px;" class="text-right">
-		                    		<strong><span t-esc="amount_by_group[1]" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></strong>
+		                    		<strong><span t-esc="o.amount_tax" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></strong>
 	                    		</td>
 	                    	</tr>
 		                    <!-- </t> -->
