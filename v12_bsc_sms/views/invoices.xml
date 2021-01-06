@@ -36,13 +36,7 @@
 							</td>
 						</tr>
 					</table>
-					<table style="margin-top:0px;">
-						<tr>
-							<td colspan="4"
-								style="padding:3px;font-style:12px;text-align:left;border:0px;">
-								<strong>Faktur Penjualan</strong>
-							</td>
-						</tr>
+					<table style="margin-top:0px;">						
 						<tr>
 							<td width="450px" style="font-style:10px;padding:5px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;">
 								Kepada Yth
