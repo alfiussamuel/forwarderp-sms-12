@@ -1,1 +1,1 @@
-import trigger_onchange
+from . import trigger_onchange
