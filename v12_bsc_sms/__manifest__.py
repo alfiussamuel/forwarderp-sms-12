@@ -9,7 +9,7 @@
         'views/sms_menu.xml',    
         'views/invoices.xml',
         'views/mrp_production_templates.xml',
-        'wizard/trigger_onchange_view.xml',        
+        # 'wizard/trigger_onchange_view.xml',        
     ],
     'installable': True,
     'application': True,
