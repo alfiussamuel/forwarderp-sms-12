@@ -32,7 +32,7 @@
 
 					</table>
 					<table>
-						<tr style="padding:2px;font-style:12px;text-align:left;">
+						<tr style="padding:3px;font-style:12px;text-align:left;border:0px;">
 							<td colspan="4">
 								<strong>Faktur Penjualan</strong>
 							</td>
@@ -177,7 +177,7 @@
 		            		</td>
 		            	</tr>
 						<tr>							
-							<td width="400px" style="padding:3px;border:1px solid black;">
+							<td width="400px" style="padding:5px;border:1px solid black;">
 								<p t-if="o.company_id.bank_number1">
 									<span t-field="o.company_id.bank_number1"/><br/>
 								</p>
@@ -197,7 +197,7 @@
 							<td width="240px" style="padding:3px;border:0px;">
 							</td>
 							<td width="310px" 
-								style="text-align:center;padding:3px;border:1px solid black;">
+								style="text-align:center;padding:5px;border:1px solid black;">
 								<p t-if="o.company_id.bank_number1">
 									Diterima Oleh
 								</p>
