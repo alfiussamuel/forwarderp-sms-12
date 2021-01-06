@@ -25,6 +25,8 @@ MAP_INVOICE_TYPE_PAYMENT_SIGN = {
 class Partner(models.Model):
     _inherit = 'res.partner'
     
+    ktp = fields.Char('KTP')
+    fax = fields.Char('Fax')
     owner_name = fields.Char('Nama Pemilik')
     invoice_limit = fields.Float('Invoice Limit')
     total_receivable = fields.Float('Total Receivable', compute='_compute_total_receivable', digits=dp.get_precision('Product Unit of Measure'))

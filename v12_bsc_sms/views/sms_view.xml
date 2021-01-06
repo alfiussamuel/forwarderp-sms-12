@@ -272,7 +272,11 @@
    			<field name="model">res.partner</field>
    			<field name="inherit_id" ref="base.view_partner_form"/>
    			<field name="arch" type="xml">	        	
+   				<field name="phone" position="after">
+   					<field name="fax"/>
+   				</field>
    				<field name="category_id" position="after">
+   					<field name="ktp"/>
    					<field name="owner_name"/>
 					<field name="invoice_limit"/>
    				</field>	        	
