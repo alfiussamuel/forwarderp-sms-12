@@ -2,13 +2,13 @@
 <odoo>
     <data>
 
-    	<template id="report_invoice_document_with_payments_bsc_sms" 
+    	<!-- <template id="report_invoice_document_with_payments_bsc_sms" 
         	inherit_id="account.report_invoice_document_with_payments">
             <xpath expr="//div[@class='page']" position="replace">
 				<div class="page">
 		        </div>
             </xpath>
-        </template>
+        </template> -->
 
         <template id="report_invoice_document_bsc_sms" inherit_id="account.report_invoice_document">
             <xpath expr="//div[@class='page']" position="replace">
@@ -177,8 +177,8 @@
 		                    </table>
 		                </div>
 		            </div>
- -->	            		            
-		            <table>		            	
+ -->	                        
+		            <table>
 		            	<tr>
 		            		<td style="padding:3px;">
 		            			Terima kasih atas pilihan dan pesanannya
@@ -240,6 +240,15 @@
 		        </div>
             </xpath>
         </template>        
+
+        <template id="account.report_invoice_with_payments">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-set="lang" t-value="o.user_id.sudo().lang if o.type in ('in_invoice', 'in_refund') else o.partner_id.lang"/>
+                    <t t-call="v12_bsc_sms.report_invoice_document_bsc_sms" t-lang="lang"/>
+                </t>
+            </t>
+        </template>
 
     </data>
 </odoo>
