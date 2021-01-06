@@ -568,14 +568,15 @@ class SaleOrder(models.Model):
             if outstanding_invoice:
                 raise ValidationError(_("There are Overdue Invoices for this Customer"))   
 
-            order.state = 'sale'
-            order.confirmation_date = fields.Datetime.now()
-            if self.env.context.get('send_email'):
-                self.force_quotation_send()
-            order.order_line._action_procurement_create()
-        if self.env['ir.values'].get_default('sale.config.settings', 'auto_done_setting'):
-            self.action_done()
-        return True
+        return super(SaleOrder, self).action_confirm()
+        #     order.state = 'sale'
+        #     order.confirmation_date = fields.Datetime.now()
+        #     if self.env.context.get('send_email'):
+        #         self.force_quotation_send()
+        #     order.order_line._action_procurement_create()
+        # if self.env['ir.values'].get_default('sale.config.settings', 'auto_done_setting'):
+        #     self.action_done()
+        # return True
 
     @api.model
     def create(self, vals):
