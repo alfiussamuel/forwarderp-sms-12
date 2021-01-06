@@ -1,0 +1,10 @@
+<odoo>
+	<data>
+		
+		<!-- Manajemen Giro -->
+		<menuitem id="bsc_giro_menu" name="Manajemen Giro" parent="account.menu_finance" groups="account.group_account_user" sequence="6"/>
+    	<menuitem id="bsc_giro_menu_giro" parent="bsc_giro_menu" action="action_bsc_giro_form" name="Giro Customer"/>                                                        
+			        		
+	</data>
+</odoo>
+

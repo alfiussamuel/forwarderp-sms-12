@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="report_saleorder_document_bsc_sms" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//div[@class='page']" position="replace">
+                <div class="page">
+ 					Faktur Penjualan                                              
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
+
+                            
+
+
+

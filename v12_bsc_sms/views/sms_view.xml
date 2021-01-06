@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>			                   		               	           				
+
+    	<record id="vpicktree_v10_bsc_sms" model="ir.ui.view">
+	        <field name="name">stock.picking.tree</field>
+	        <field name="model">stock.picking</field>
+	        <field name="type">tree</field>	        
+	        <field name="inherit_id" ref="stock.vpicktree"/>
+	        <field name="arch" type="xml">
+	        	<field name="origin" position="after">
+	        		<field name="group_id" string="SO/PO Number"/>
+	        	</field>
+	        </field>
+	    </record>
+
+        <record id="account.view_account_payment_search" model="ir.ui.view">
+            <field name="name">account.payment.search</field>
+            <field name="model">account.payment</field>            
+            <field name="arch" type="xml">
+                <search string="Payments">
+                    <field name="name" filter_domain="['|', ('name','ilike',self), ('communication','ilike',self)]" string="Description"/>
+                    <separator/>
+                    <field name="partner_id" />
+                    <field name="journal_id" />
+                    <field name="user_id" />
+                    <field name="company_id" groups="base.group_multi_company" />
+                    <filter string="Payable" domain="[('payment_type','=','outbound')]"/>
+                    <filter string="Receivable" domain="[('payment_type','=','inbound')]"/>
+                    <filter string="Transfers" domain="[('payment_type','=','transfer')]"/>
+                    <separator/>
+                    <filter string="Draft" domain="[('state','=','draft')]" name='state_draft'/>
+                    <filter string="Posted" domain="[('state','=','posted')]" name='state_posted'/>
+                    <filter string="Sent" domain="[('state','=','sent')]" name='state_sent'/>
+                    <filter string="Reconciled" domain="[('state','=','reconciled')]"/>
+                    <separator/>
+                    <filter string="Partner" domain="[]" context="{'group_by': 'partner_id'}"/>
+                    <filter string="Journal" domain="[]" context="{'group_by': 'journal_id'}"/>
+                    <filter string="Payment Method" domain="[]" context="{'group_by': 'payment_method_id'}"/>
+                    <filter string="Salesperson" domain="[]" context="{'group_by': 'user_id'}"/>
+                    <filter string="State" domain="[]" context="{'group_by': 'state'}"/>
+                    <filter string="Currency" domain="[]" context="{'group_by': 'currency_id'}" groups="base.group_multi_currency"/>
+                    <filter string="Company" domain="[]" context="{'group_by': 'company_id'}" groups="base.group_multi_company"/>                    
+                </search>
+            </field>
+        </record>
+            
+            
+		<record id="view_account_payment_tree_v10_bsc_sms" model="ir.ui.view">
+	        <field name="name">Payments</field>
+	        <field name="model">account.payment</field>
+	        <field name="type">tree</field>	        
+	        <field name="inherit_id" ref="account.view_account_payment_tree"/>
+	        <field name="arch" type="xml">
+	        	<field name="payment_method_id" position="attributes">
+	        		<attribute name="invisible">1</attribute>
+	        	</field>
+	        	<field name="state" position="before">
+	        		<field name="user_id"/>
+	        		<field name="is_change"/>
+	        	</field>	        		        		        		        	
+	        </field>
+	    </record>	   
+	    
+		<record id="view_account_payment_from_invoices_sms" model="ir.ui.view">
+		    <field name="name">account.register.payments.wizard</field>
+		    <field name="model">account.register.payments</field>
+		    <field name="inherit_id" ref="account.view_account_payment_from_invoices"/>
+		    <field name="arch" type="xml">
+		    	<field name="journal_id" position="after">
+					<field name="is_giro"/>
+		    		<field name="giro_id" 
+		    			options="{'no_quick_create':True, 'no_create_edit':True, 'no_open':True}" 
+		    			attrs="{'invisible':[('is_giro', '=', False)], 'required':[('is_giro', '=', True)]}"/>        		
+		    	</field>
+		    	<field name="amount" position="after">
+		    		<field name="real_amount" invisible="1"/>
+		    	</field>
+		    	<group position="after">
+		    		<group attrs="{'invisible': [('payment_difference', '=', 0.0)]}">
+		                <label for="payment_difference"/>
+		                <div>
+		                    <field name="payment_difference"/>
+		                    <field name="payment_difference_handling" widget="radio" nolabel="1"/>
+		                </div>
+		                <field name="writeoff_account_id" string="Post Difference In"
+		                    attrs="{'invisible': [('payment_difference_handling','=','open')], 'required': [('payment_difference_handling', '=', 'reconcile')]}"/>
+		            </group>
+		    	</group>
+		    </field>
+		</record>
+		        
+		
+		<record id="account_aged_balance_view_sms" model="ir.ui.view">
+		    <field name="name">Aged Partner Balance</field>
+		    <field name="model">account.aged.trial.balance</field>
+		    <field name="inherit_id" ref="account.account_aged_balance_view"/>
+		    <field name="arch" type="xml">
+		    	<field name="target_move" position="after">
+		    		<field name="partner_id"
+		    			options="{'no_quick_create':True, 'no_create_edit':True, 'no_open':True}"/>
+		    	</field>
+		    </field>
+		</record>
+		
+		<record id="product_template_only_form_view_sms" model="ir.ui.view">
+ 			<field name="name">Products</field>
+ 			<field name="model">product.template</field>
+ 			<field name="inherit_id" ref="product.product_template_only_form_view"/>
+ 			<field name="arch" type="xml">
+ 				<field name="default_code" position="after">
+ 					<field name="tax_name"/>
+ 				</field>
+ 			</field>
+		</record>       	
+
+		<record id="product_template_form_view_sms" model="ir.ui.view">
+ 			<field name="name">Products</field>
+ 			<field name="model">product.template</field>
+ 			<field name="inherit_id" ref="product.product_template_form_view"/>
+ 			<field name="arch" type="xml">	        	
+ 				<label for="standard_price" position="attributes">
+  					<attribute name="groups">purchase.group_purchase_manager</attribute>
+ 				</label>	        		
+ 				<div name="standard_price_uom" position="attributes">
+  					<attribute name="groups">purchase.group_purchase_manager</attribute>
+ 				</div>
+ 				<field name="standard_price" position="attributes">
+  					<attribute name="groups">purchase.group_purchase_manager</attribute>
+ 				</field>   
+ 				<!-- <field name="default_code" position="after">
+ 					<field name="tax_name"/>
+ 				</field> -->
+ 			</field>
+		</record>	    
+		       		   
+		<record id="view_account_payment_invoice_form_sms" model="ir.ui.view">
+	       	<field name="name">Register Payment</field>
+	       	<field name="model">account.payment</field>
+	       	<field name="inherit_id" ref="account.view_account_payment_invoice_form"/>
+	       	<field name="arch" type="xml">	        	
+		       	<field name="journal_id" position="after">
+	       			<field name="is_giro"/>
+	       			<field name="giro_id" options="{'no_quick_create':True, 'no_create_edit':True, 'no_open':True}" 
+	       				attrs="{'invisible':[('is_giro', '=', False)], 'required':[('is_giro', '=', True)]}"
+	       				domain="[('state','=','Baru')]"/>
+	       		</field>	        	
+	       	</field>
+		</record>
+				
+		<record id="view_account_payment_form_sms" model="ir.ui.view">
+		   	<field name="name">Register Payment</field>
+	       	<field name="model">account.payment</field>
+	       	<field name="inherit_id" ref="account.view_account_payment_form"/>
+	       	<field name="arch" type="xml">	        	
+	       		<field name="journal_id" position="after">
+		       		<field name="is_giro"/>
+	       			<field name="giro_id" options="{'no_quick_create':True, 'no_create_edit':True, 'no_open':True}" 
+		       			attrs="{'invisible':[('is_giro', '=', False)], 'required':[('is_giro', '=', True)]}"
+	       				domain="[('state','=','Baru')]"/>
+	       		</field>	        	
+	       	</field>
+		</record>
+					
+		<!-- Giro Management -->		
+		<record model="ir.ui.view" id="bsc_giro_form_view">
+			<field name="name">Giro Customer</field>
+			<field name="model">bsc.giro</field>
+			<field name="arch" type="xml">
+				<form>		
+					<header>
+						<button name="button_cancel" type="object" string="Batal" class="oe_highlight" states="Baru"/>
+							<field name="state" widget="statusbar" readonly="1"/>
+					</header>							
+					<sheet>
+						<group>
+							<group>																
+								<field name="partner_id" required="1"
+									attrs="{'readonly':[('state', '!=', 'Baru')]}"/>
+								<field name="name" required="1"
+									attrs="{'readonly':[('state', '!=', 'Baru')]}"/>
+								<field name="amount" required="1"
+									attrs="{'readonly':[('state', '!=', 'Baru')]}"/>																
+							</group>
+							<group>
+								<field name="date" required="1"
+									attrs="{'readonly':[('state', '!=', 'Baru')]}"/>
+								<field name="jadwal_cair" required="1"
+									attrs="{'readonly':[('state', '!=', 'Baru')]}"/>
+								<field name="date_due" readonly="1"/>
+							</group>							
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="bsc_giro_tree_view">
+			<field name="name">Giro Customer</field>
+			<field name="model">bsc.giro</field>
+			<field name="arch" type="xml">
+				<tree string="Manajemen Giro">	
+					<field name="partner_id"/>				
+					<field name="name"/>														
+					<field name="date"/>
+					<field name="date_due"/>				
+					<field name="amount" sum="Total Amount"/>	
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="action_bsc_giro_form" model="ir.actions.act_window">
+			<field name="name">Giro Customer</field>
+			<field name="res_model">bsc.giro</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">
+				Click to add a Contact Center
+				</p>
+				<p>klik tombol create untuk membuat data baru</p>
+			</field>
+		</record>
+			
+		<!-- Customize -->		
+		<record id="invoice_supplier_form_sms" model="ir.ui.view">
+	       	<field name="name">Vendor Bill</field>
+	       	<field name="model">account.invoice</field>
+	       	<field name="inherit_id" ref="account.invoice_supplier_form"/>
+	       	<field name="arch" type="xml">
+	       		<xpath expr="/form/sheet/notebook/page[1]/field[@name='invoice_line_ids']/tree/field[@name='price_unit']" position="after">
+	       			<field name="amount_usd"/>
+	       		</xpath>
+	       	</field>
+       	</record>
+
+		<record id="invoice_form_sms" model="ir.ui.view">
+	       	<field name="name">Invoices</field>
+	       	<field name="model">account.invoice</field>
+	       	<field name="inherit_id" ref="account.invoice_form"/>
+	       	<field name="arch" type="xml">
+	       		<button name="action_invoice_cancel" position="replace">
+	       			<button name="action_invoice_cancel" type="object" 
+	       				states="draft,proforma2,open" string="Cancel Invoice" 
+	       				groups="account.group_account_manager"/>
+	       		</button>	       		
+	       		<button name="%(account.action_account_invoice_payment)d" position="replace">
+	       			<button name="%(account.action_account_invoice_payment)d" type="action" states="open" string="Register Payment" groups="base.group_erp_manager" class="oe_highlight"/>
+	       		</button>
+		       	<field name="partner_id" position="after">
+	       			<field name="attachment_id"/>
+	       		</field>
+	       		<field name="payment_term_id" position="after">
+		       		<field name="total_qty"/>
+	       		</field>	       		
+	       	</field>
+		</record>
+		
+		<record id="invoice_tree_sms" model="ir.ui.view">
+       		<field name="name">Invoices</field>
+       		<field name="model">account.invoice</field>
+       		<field name="inherit_id" ref="account.invoice_tree"/>
+       		<field name="arch" type="xml">	        	
+       			<field name="origin" position="after">
+       				<field name="total_qty"/>	    	        			        				        	       
+       			</field>	        	
+       		</field>
+		</record>
+		
+		<record id="view_partner_form_sms" model="ir.ui.view">
+   			<field name="name">Customer</field>
+   			<field name="model">res.partner</field>
+   			<field name="inherit_id" ref="base.view_partner_form"/>
+   			<field name="arch" type="xml">	        	
+   				<field name="category_id" position="after">
+   					<field name="owner_name"/>
+					<field name="invoice_limit"/>
+   				</field>	        	
+   				<button name="toggle_active" position="after">
+   					<button type="object" class="oe_stat_button" id="receivable_button" 
+   						icon="fa-pencil-square-o" name="action_view_receivable" 
+   						attrs="{'invisible': [('customer', '=', False)]}" context="{'default_partner_id': active_id}">
+                  		<div class="o_form_field o_stat_info">
+	                      	<span class="o_stat_value"><field name="total_receivable" widget="monetary" 
+	                      		options="{'currency_field': 'currency_id'}"/></span>
+                      		<span class="o_stat_text">Receivable</span>
+                  		</div>
+              		</button>
+              		<button type="object" class="oe_stat_button" id="giro_button" 
+	   					icon="fa-pencil-square-o" name="action_view_giro" 
+   						attrs="{'invisible': [('customer', '=', False)]}" context="{'default_partner_id': active_id}">
+              			<div class="o_form_field o_stat_info">
+                			<span class="o_stat_value"><field name="total_giro" widget="monetary" 
+                    			options="{'currency_field': 'currency_id'}"/></span>
+                   			<span class="o_stat_text">Giro</span>
+              			</div>
+           			</button>
+   				</button>
+   			</field>
+		</record>	
+		
+		<record id="view_partner_tree_sms" model="ir.ui.view">
+	       	<field name="name">Customer</field>
+       		<field name="model">res.partner</field>
+       		<field name="inherit_id" ref="base.view_partner_tree"/>
+       		<field name="arch" type="xml">	        	
+       			<field name="display_name" position="after">
+       			<field name="owner_name"/>	    	        			        				        	       
+       		</field>	        	
+       		</field>
+		</record>							              
+		
+		<record id="view_company_form_sms" model="ir.ui.view">
+       		<field name="name">Companies</field>
+       		<field name="model">res.company</field>
+       		<field name="inherit_id" ref="base.view_company_form"/>
+       		<field name="arch" type="xml">	        	
+       			<field name="website" position="after">
+       				<field name="bank_number1"/>
+       				<field name="bank_number2"/>
+       				<field name="bank_number3"/>
+       				<field name="bank_number4"/>
+       				<field name="bank_number5"/>	    	        			        				        	       
+       			</field>	        	
+       		</field>
+		</record>
+				
+	</data>
+</openerp>
