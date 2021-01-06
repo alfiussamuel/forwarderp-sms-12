@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bsc_giro_user,access_bsc_giro_user,model_bsc_giro,base.group_user,1,1,1,1
