@@ -14,7 +14,7 @@
 	        </field>
 	    </record>
 
-        <record id="account.view_account_payment_search" model="ir.ui.view">
+        <!-- <record id="account.view_account_payment_search" model="ir.ui.view">
             <field name="name">account.payment.search</field>
             <field name="model">account.payment</field>            
             <field name="arch" type="xml">
@@ -101,7 +101,7 @@
 		    			options="{'no_quick_create':True, 'no_create_edit':True, 'no_open':True}"/>
 		    	</field>
 		    </field>
-		</record>
+		</record> -->
 		
 		<record id="product_template_only_form_view_sms" model="ir.ui.view">
  			<field name="name">Products</field>
@@ -134,7 +134,7 @@
  			</field>
 		</record>	    
 		       		   
-		<record id="view_account_payment_invoice_form_sms" model="ir.ui.view">
+		<!-- <record id="view_account_payment_invoice_form_sms" model="ir.ui.view">
 	       	<field name="name">Register Payment</field>
 	       	<field name="model">account.payment</field>
 	       	<field name="inherit_id" ref="account.view_account_payment_invoice_form"/>
@@ -146,9 +146,9 @@
 	       				domain="[('state','=','Baru')]"/>
 	       		</field>	        	
 	       	</field>
-		</record>
+		</record> -->
 				
-		<record id="view_account_payment_form_sms" model="ir.ui.view">
+		<!-- <record id="view_account_payment_form_sms" model="ir.ui.view">
 		   	<field name="name">Register Payment</field>
 	       	<field name="model">account.payment</field>
 	       	<field name="inherit_id" ref="account.view_account_payment_form"/>
@@ -160,7 +160,7 @@
 	       				domain="[('state','=','Baru')]"/>
 	       		</field>	        	
 	       	</field>
-		</record>
+		</record> -->
 					
 		<!-- Giro Management -->		
 		<record model="ir.ui.view" id="bsc_giro_form_view">
@@ -223,7 +223,7 @@
 		</record>
 			
 		<!-- Customize -->		
-		<record id="invoice_supplier_form_sms" model="ir.ui.view">
+		<!-- <record id="invoice_supplier_form_sms" model="ir.ui.view">
 	       	<field name="name">Vendor Bill</field>
 	       	<field name="model">account.invoice</field>
 	       	<field name="inherit_id" ref="account.invoice_supplier_form"/>
@@ -265,7 +265,7 @@
        				<field name="total_qty"/>	    	        			        				        	       
        			</field>	        	
        		</field>
-		</record>
+		</record> -->
 		
 		<record id="view_partner_form_sms" model="ir.ui.view">
    			<field name="name">Customer</field>
