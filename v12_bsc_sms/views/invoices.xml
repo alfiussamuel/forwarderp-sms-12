@@ -28,10 +28,15 @@
 	                <address t-field="o.new_partner_id"/>
 	            </t>
 				<div class="page">									
-					<strong>
-						Faktur Penjualan
-					</strong>
 					<table>
+
+					</table>
+					<table>
+						<tr style="padding:2px;font-style:12px;text-align:left;">
+							<td colspan="4">
+								<strong>Faktur Penjualan</strong>
+							</td>
+						</tr>
 						<tr>
 							<td width="450px" style="font-style:10px;padding:5px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;">
 								Kepada Yth
