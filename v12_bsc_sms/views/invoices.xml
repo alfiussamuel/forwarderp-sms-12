@@ -38,20 +38,20 @@
 					</table>
 					<table style="margin-top:0px;">						
 						<tr>
-							<td width="450px" style="font-style:10px;padding:5px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;">
+							<td width="450px" style="font-style:9px;padding:5px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;">
 								Kepada Yth
 							</td>
 							<td width="80px"></td>
-							<td width="150px" style="font-style:10px;border:0px;">
+							<td width="150px" style="font-style:9px;border:0px;">
 								Nomor Transaksi
 							</td>											
-							<td width="150px" style="padding:5px;font-style:10px;">
+							<td width="150px" style="padding:5px;font-style:9px;">
 								: <span t-field="o.number"/>
 							</td>			
 						</tr>
 						<tr>							
 							<td rowspan="2" 
-								style="font-style:10px;padding:5px;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;">
+								style="font-style:9px;padding:5px;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;">
 								<strong><span t-field="o.partner_id.name"/><br/></strong>
 								<t t-if="o.partner_id.owner_name"><span t-field="o.partner_id.owner_name"/><br/></t>
 								<t t-if="o.partner_id.mobile"><span t-field="o.partner_id.mobile"/><br/></t>
@@ -62,19 +62,19 @@
 								<strong><t t-if="o.partner_id.city"><span t-field="o.partner_id.city"/></t></strong>								
 							</td>							
 							<td></td>
-							<td style="font-style:10px;">
+							<td style="font-style:9px;">
 								Tanggal Transaksi
 							</td>											
-							<td style="padding:5px;font-style:10px;">
+							<td style="padding:5px;font-style:9px;">
 								: <span t-field="o.date_invoice"/>
 							</td>						               
 						</tr>
 						<tr>																
 							<td></td>
-							<td style="font-style:10px;">
+							<td style="font-style:9px;">
 								Salesman
 							</td>											
-							<td style="padding:5px;font-style:10px;">
+							<td style="padding:5px;font-style:9px;">
 								: <span t-field="o.user_id.name"/>
 							</td>						               
 						</tr>						
