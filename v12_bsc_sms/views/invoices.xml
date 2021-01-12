@@ -90,80 +90,80 @@
 		            <table style="margin-top:20px;margin-bottom:10px;">
 		                <thead>
 		                    <tr>
-		                        <th style="font-size:13px;text-align:center;border:1px solid black;padding:5px;" width="30px">No</th>
-		                        <th style="font-size:13px;text-align:center;border:1px solid black;padding:5px;" width="150px">Kode Produk/Jasa</th>
-		                        <th style="font-size:13px;text-align:center;border:1px solid black;padding:5px;" width="270px">Nama Produk/Jasa</th>
-		                        <th style="font-size:13px;text-align:center;border:1px solid black;padding:5px;" width="40px">Qty</th>
-		                        <th style="font-size:13px;text-align:center;border:1px solid black;padding:5px;" width="40px">Unit</th>
-		                        <th style="font-size:13px;text-align:center;border:1px solid black;padding:5px;" width="120px">Harga</th>
-		                        <th style="font-size:13px;text-align:center;border:1px solid black;padding:5px;" width="70px">Disc(%)</th>
-		                        <th style="font-size:13px;text-align:center;border:1px solid black;padding:5px;" width="150px">Jumlah</th>		                        
+		                        <th style="font-size:12px;text-align:center;border:1px solid black;padding:5px;" width="30px">No</th>
+		                        <th style="font-size:12px;text-align:center;border:1px solid black;padding:5px;" width="150px">Kode Produk/Jasa</th>
+		                        <th style="font-size:12px;text-align:center;border:1px solid black;padding:5px;" width="270px">Nama Produk/Jasa</th>
+		                        <th style="font-size:12px;text-align:center;border:1px solid black;padding:5px;" width="40px">Qty</th>
+		                        <th style="font-size:12px;text-align:center;border:1px solid black;padding:5px;" width="40px">Unit</th>
+		                        <th style="font-size:12px;text-align:center;border:1px solid black;padding:5px;" width="120px">Harga</th>
+		                        <th style="font-size:12px;text-align:center;border:1px solid black;padding:5px;" width="70px">Disc(%)</th>
+		                        <th style="font-size:12px;text-align:center;border:1px solid black;padding:5px;" width="150px">Jumlah</th>		                        
 		                    </tr>
 		                </thead>
 		                <tbody class="invoice_tbody">
 		                	<t t-set="i" t-value="1"/>
 		                    <tr t-foreach="o.invoice_line_ids" t-as="l">
-		                    	<td style="font-size:13px;text-align:center;border:1px solid black;padding:5px;">
+		                    	<td style="font-size:12px;text-align:center;border:1px solid black;padding:5px;">
 	                            	<span t-esc="i"/>
 	                            	<t t-set="i" t-value="i+1"/>
 	                            </td>
-		                        <td style="font-size:13px;border:1px solid black;padding:5px;text-align:center;">
+		                        <td style="font-size:12px;border:1px solid black;padding:5px;text-align:center;">
 		                        	<strong><span t-field="l.product_id.default_code"/></strong>
 		                        </td>
-		                        <td style="font-size:13px;border:1px solid black;padding:5px;">
+		                        <td style="font-size:12px;border:1px solid black;padding:5px;">
 		                        	<span t-field="l.product_id.name"/>
 		                        </td>		                        
-		                        <td style="font-size:14px;border:1px solid black;padding:5px;" class="text-center">
+		                        <td style="font-size:12px;border:1px solid black;padding:5px;" class="text-center">
 		                            <span t-field="l.quantity"/>		                            
 		                        </td>
-		                        <td style="font-size:13px;border:1px solid black;padding:5px;" class="text-center">		                            
+		                        <td style="font-size:12px;border:1px solid black;padding:5px;" class="text-center">		                            
 		                            <span t-field="l.uom_id"  groups="product.group_uom"/>
 		                        </td>
-		                        <td style="font-size:14px;border:1px solid black;padding:5px;" class="text-right">
+		                        <td style="font-size:12px;border:1px solid black;padding:5px;" class="text-right">
 		                            <span t-field="l.price_unit"/>
 		                        </td>
-		                        <td style="font-size:14px;border:1px solid black;padding:5px;" class="text-center" groups="sale.group_discount_per_so_line">
+		                        <td style="font-size:12px;border:1px solid black;padding:5px;" class="text-center" groups="sale.group_discount_per_so_line">
 		                            <!-- <span t-field="l.discount"/> -->
 		                            <span t-esc="'{0:,.1f}'.format(l.discount)"/>
 		                        </td>		                        
-		                        <td style="font-size:14px;border:1px solid black;padding:5px;" class="text-right">
+		                        <td style="font-size:12px;border:1px solid black;padding:5px;" class="text-right">
 		                            <span t-field="l.price_subtotal" 
 		                                t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
 		                        </td>
 		                    </tr>
 		                    <tr>
-		                    	<td colspan="3" style="font-size:13px;border:1px solid black;padding:5px;text-align:right;">
+		                    	<td colspan="3" style="font-size:12px;border:1px solid black;padding:5px;text-align:right;">
 		                    		<strong>Total Qty</strong>
 		                    	</td>
-		                    	<td style="font-size:13px;border:1px solid black;padding:5px;" class="text-center">
+		                    	<td style="font-size:12px;border:1px solid black;padding:5px;" class="text-center">
 		                    		<span t-field="o.total_qty"/>
 		                    	</td>
-		                    	<td colspan="3" style="font-size:13px;border:1px solid black;padding:5px;text-align:right;">
+		                    	<td colspan="3" style="font-size:12px;border:1px solid black;padding:5px;text-align:right;">
 		                    		<strong>Subtotal</strong>
 		                    	</td>
-		                    	<td style="font-size:14px;border:1px solid black;padding:5px;" class="text-right">
+		                    	<td style="font-size:12px;border:1px solid black;padding:5px;" class="text-right">
 		                    		<strong><span t-field="o.amount_untaxed" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></strong>
 		                    	</td>
 		                    </tr>
 		                    <!-- <t t-foreach="o._get_tax_amount_by_group()" t-as="amount_by_group"> -->
 	                    	<tr>		                    	
-		                    	<td colspan="4" style="font-size:13px;border:0px;padding:5px;text-align:right;">			                    		
+		                    	<td colspan="4" style="font-size:12px;border:0px;padding:5px;text-align:right;">			                    		
 		                    	</td>
-		                    	<td colspan="3" style="font-size:13px;border:1px solid black;padding:5px;text-align:right;">
+		                    	<td colspan="3" style="font-size:12px;border:1px solid black;padding:5px;text-align:right;">
 	                    			<strong>PPN 10%</strong>
 	                    		</td>
-	                    		<td style="font-size:14px;border:1px solid black;padding:5px;" class="text-right">
+	                    		<td style="font-size:12px;border:1px solid black;padding:5px;" class="text-right">
 		                    		<strong><span t-esc="o.amount_tax" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></strong>
 	                    		</td>
 	                    	</tr>
 		                    <!-- </t> -->
 		                    <tr>
-	                            <td colspan="4" style="font-size:13px;border:0px;padding:5px;text-align:right;">			                    		
+	                            <td colspan="4" style="font-size:12px;border:0px;padding:5px;text-align:right;">			                    		
 			                    </td>
-	                            <td colspan="3" style="font-size:13px;border:1px solid black;padding:5px;text-align:right;">
+	                            <td colspan="3" style="font-size:12px;border:1px solid black;padding:5px;text-align:right;">
 	                            	<strong>Total</strong>
 	                            </td>
-	                            <td style="font-size:14px;border:1px solid black;padding:5px;" class="text-right">
+	                            <td style="font-size:12px;border:1px solid black;padding:5px;" class="text-right">
 	                                 <strong><span t-field="o.amount_total" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></strong>
 	                            </td>
 	                        </tr>
@@ -171,12 +171,12 @@
 		            </table>
 		            <table>
 		            	<tr>
-		            		<td style="padding:3px;">
+		            		<td style="padding:3px;font-size:12px;">
 		            			Terima kasih atas pilihan dan pesanannya
 		            		</td>
 		            	</tr>
 						<tr>							
-							<td width="400px" style="padding:5px;border:1px solid black;">
+							<td width="400px" style="font-size:12px;padding:5px;border:1px solid black;">
 								<p t-if="o.company_id.bank_number1">
 									<span t-field="o.company_id.bank_number1"/><br/>
 								</p>
@@ -193,10 +193,10 @@
 									<span t-field="o.company_id.bank_number5"/>
 								</p>
 							</td>
-							<td width="240px" style="padding:3px;border:0px;">
+							<td width="240px" style="font-size:12px;padding:3px;border:0px;">
 							</td>
 							<td width="310px" 
-								style="text-align:center;padding:5px;border:1px solid black;">
+								style="font-size:12px;text-align:center;padding:5px;border:1px solid black;">
 								<p t-if="o.company_id.bank_number1">
 									Diterima Oleh
 								</p>
