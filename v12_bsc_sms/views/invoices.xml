@@ -28,7 +28,7 @@
 	                <address t-field="o.new_partner_id"/>
 	            </t>
 				<div class="page">
-					<table style="margin-bottom:0px;">
+					<table style="margin-bottom:0px;margin-top:0px;">
 						<tr>
 							<td colspan="4" style="padding:0px;font-style:12px;text-align:left;border:0px;margin-top:0px;">
 								<strong>Faktur Penjualan</strong>
@@ -37,43 +37,43 @@
 					</table>
 					<table style="margin-top:0px;">						
 						<tr>
-							<td width="450px" style="font-size:12px;padding:5px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;">
+							<td width="450px" style="font-size:13px;padding:5px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;">
 								Kepada Yth
 							</td>
 							<td width="100px"></td>
-							<td width="150px" style="font-size:12px;border:0px;padding:3px;">
+							<td width="150px" style="font-size:13px;border:0px;padding:3px;">
 								Nomor Transaksi
 							</td>											
-							<td width="150px" style="padding:3px;font-size:12px;">
+							<td width="150px" style="padding:3px;font-size:13px;">
 								: <span t-field="o.number"/>
 							</td>			
 						</tr>
 						<tr>							
 							<td rowspan="2" 
-								style="font-size:12px;padding:3px;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;">
+								style="font-size:13px;padding:3px;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;">
 								<strong><span t-field="o.partner_id.name"/><br/></strong>
 								<t t-if="o.partner_id.owner_name"><span t-field="o.partner_id.owner_name"/><br/></t>
 								<t t-if="o.partner_id.mobile"><span t-field="o.partner_id.mobile"/><br/></t>
 								<t t-if="o.partner_id.phone"><span t-field="o.partner_id.phone"/><br/></t>
-								<t t-if="o.partner_id.fax"><span t-field="o.partner_id.fax"/><br/></t>
+								<!-- <t t-if="o.partner_id.fax"><span t-field="o.partner_id.fax"/><br/></t> -->
 								<t t-if="o.partner_id.street"><span t-field="o.partner_id.street"/><br/></t>
 								<t t-if="o.partner_id.street"><span t-field="o.partner_id.street2"/><br/></t>
 								<strong><t t-if="o.partner_id.city"><span t-field="o.partner_id.city"/></t></strong>								
 							</td>							
 							<td></td>
-							<td style="font-size:12px;padding:3px;">
+							<td style="font-size:13px;padding:3px;">
 								Tanggal Transaksi
 							</td>											
-							<td style="font-size:12px;padding:3px;">
+							<td style="font-size:13px;padding:3px;">
 								: <span t-field="o.date_invoice"/>
 							</td>						               
 						</tr>
 						<tr>																
 							<td></td>
-							<td style="font-size:12px;padding:3px;">
+							<td style="font-size:13px;padding:3px;">
 								Salesman
 							</td>											
-							<td style="font-size:12px;padding:3px;">
+							<td style="font-size:13px;padding:3px;">
 								: <span t-field="o.user_id.name"/>
 							</td>						               
 						</tr>						
