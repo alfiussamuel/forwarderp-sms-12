@@ -37,10 +37,10 @@
 					</table>
 					<table style="margin-top:0px;">						
 						<tr>
-							<td width="450px" style="font-size:13px;padding:5px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;">
+							<td width="420px" style="font-size:13px;padding:5px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;">
 								Kepada Yth
 							</td>
-							<td width="100px"></td>
+							<td width="130px"></td>
 							<td width="150px" style="font-size:13px;border:0px;padding:3px;">
 								Nomor Transaksi
 							</td>											
@@ -54,7 +54,7 @@
 								<strong><span t-field="o.partner_id.name"/><br/></strong>
 								<t t-if="o.partner_id.owner_name"><span t-field="o.partner_id.owner_name"/><br/></t>
 								<t t-if="o.partner_id.mobile"><span t-field="o.partner_id.mobile"/><br/></t>
-								<t t-if="o.partner_id.phone"><span t-field="o.partner_id.phone"/><br/></t>
+								<!-- <t t-if="o.partner_id.phone"><span t-field="o.partner_id.phone"/><br/></t -->>
 								<!-- <t t-if="o.partner_id.fax"><span t-field="o.partner_id.fax"/><br/></t> -->
 								<t t-if="o.partner_id.street"><span t-field="o.partner_id.street"/><br/></t>
 								<t t-if="o.partner_id.street"><span t-field="o.partner_id.street2"/><br/></t>
