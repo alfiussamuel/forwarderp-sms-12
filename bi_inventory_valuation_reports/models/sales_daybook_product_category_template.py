@@ -231,12 +231,12 @@ class sales_daybook_product_category_report(models.AbstractModel):
                 cost = 0
                 
                 for rec in stock_move_rec :
-                    if rec._is_in():
+                    # if rec._is_in():
                         
 
 
-                        qty = qty + rec.product_uom_qty
-                        cost = cost + (rec.product_uom_qty * rec.price_unit)
+                    qty = qty + rec.product_uom_qty
+                    cost = cost + (rec.product_uom_qty * rec.price_unit)
 
 
 
@@ -451,12 +451,12 @@ class sales_daybook_product_category_report(models.AbstractModel):
             cost = 0
             
             for rec in stock_move_rec :
-                if rec._is_in():
+                # if rec._is_in():
                     
 
 
-                    qty = qty + rec.product_uom_qty
-                    cost = cost + (rec.product_uom_qty * rec.price_unit)
+                qty = qty + rec.product_uom_qty
+                cost = cost + (rec.product_uom_qty * rec.price_unit)
 
 
 

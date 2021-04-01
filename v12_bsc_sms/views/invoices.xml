@@ -111,7 +111,7 @@
 		                        	<strong><span t-field="l.product_id.default_code"/></strong>
 		                        </td>
 		                        <td style="font-size:12px;border:1px solid black;padding:5px;">
-		                        	<span t-field="l.product_id.name"/>
+		                        	<span t-field="l.name"/>
 		                        </td>		                        
 		                        <td style="font-size:12px;border:1px solid black;padding:5px;" class="text-center">
 		                            <span t-field="l.quantity"/>		                            

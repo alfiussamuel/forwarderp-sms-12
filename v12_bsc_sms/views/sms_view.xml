@@ -34,6 +34,7 @@
 		                                <div name="tags"/>
 		                                <ul>
 		                                    <li>Price: <field name="lst_price" widget="monetary" options="{'currency_field': 'currency_id', 'field_digits': True}"/></li>
+		                                    <li>On Hand: <field name="qty_available"/> <field name="uom_id"/></li>
 		                                </ul>
 		                                <div name="tags"/>
 		                            </div>
@@ -266,7 +267,7 @@
 		</record>
 			
 		<!-- Customize -->		
-		<!-- <record id="invoice_supplier_form_sms" model="ir.ui.view">
+		<record id="invoice_supplier_form_sms" model="ir.ui.view">
 	       	<field name="name">Vendor Bill</field>
 	       	<field name="model">account.invoice</field>
 	       	<field name="inherit_id" ref="account.invoice_supplier_form"/>
@@ -295,6 +296,7 @@
 	       		</field>
 	       		<field name="payment_term_id" position="after">
 		       		<field name="total_qty"/>
+		       		<field name="old_number"/>
 	       		</field>	       		
 	       	</field>
 		</record>
@@ -308,7 +310,7 @@
        				<field name="total_qty"/>	    	        			        				        	       
        			</field>	        	
        		</field>
-		</record> -->
+		</record>
 		
 		<record id="view_partner_form_sms" model="ir.ui.view">
    			<field name="name">Customer</field>

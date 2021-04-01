@@ -273,12 +273,12 @@ class sale_day_book_wizard(models.TransientModel):
                 cost = 0
                 
                 for rec in stock_move_rec :
-                    if rec._is_in():
+                    # if rec._is_in():
                         
 
 
-                        qty = qty + rec.product_uom_qty
-                        cost = cost + (rec.product_uom_qty * rec.price_unit)
+                    qty = qty + rec.product_uom_qty
+                    cost = cost + (rec.product_uom_qty * rec.price_unit)
 
 
 
@@ -489,12 +489,12 @@ class sale_day_book_wizard(models.TransientModel):
             cost = 0
             
             for rec in stock_move_rec :
-                if rec._is_in():
+                # if rec._is_in():
                     
 
 
-                    qty = qty + rec.product_uom_qty
-                    cost = cost + (rec.product_uom_qty * rec.price_unit)
+                qty = qty + rec.product_uom_qty
+                cost = cost + (rec.product_uom_qty * rec.price_unit)
 
 
 
