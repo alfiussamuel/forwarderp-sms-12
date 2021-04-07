@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="group_backdate" model="res.groups">
+			<field name="name">Backdate Operations</field>
+			<field name="category_id" ref="base.module_category_usability" />
+			<field name="comment">The user in this group will be able to do backdate operations. For example, validating a stock transfer of last week.</field>
+		</record>
+	</data>
+</odoo>

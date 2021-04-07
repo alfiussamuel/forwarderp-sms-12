@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="stock.group_stock_manager" model="res.groups">
+			<field name="implied_ids"
+				eval="[(4, ref('to_backdate.group_backdate'))]" />
+		</record>
+	</data>
+</odoo>

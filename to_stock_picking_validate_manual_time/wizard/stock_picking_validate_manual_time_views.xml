@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_validate_datetime_manual" model="ir.ui.view">
+        <field name="name">stock.picking.validate.manual.datetime.wizard.form</field>
+        <field name="model">stock.picking.validate.manual.datetime.wizard</field>
+        <field name="inherit_id" ref="to_backdate.abstract_inventory_backdate_wizard_form_view"/>
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+        	<xpath expr="//field[@name='date']" position="after">
+        		<field name="picking_id" invisible="1"/>
+        	</xpath>
+        </field>
+    </record>
+</odoo>

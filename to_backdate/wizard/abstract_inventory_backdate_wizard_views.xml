@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="abstract_inventory_backdate_wizard_form_view"
+		model="ir.ui.view">
+		<field name="name">abstract.inventory.backdate.wizard.form</field>
+		<field name="model">abstract.inventory.backdate.wizard</field>
+		<field name="arch" type="xml">
+			<form string="Backdate Operation Wizard">
+				<group>
+					<group>
+						<field name="date" />
+					</group>
+				</group>
+				<footer>
+					<button name="process" string="Validate" type="object"
+						class="btn-primary" />
+					<button string="Cancel" class="btn-default" special="cancel" />
+				</footer>
+			</form>
+		</field>
+	</record>
+</odoo>

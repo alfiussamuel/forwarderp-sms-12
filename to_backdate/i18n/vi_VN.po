@@ -1,0 +1,84 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* to_backdate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-14 05:10+0000\n"
+"PO-Revision-Date: 2019-04-14 05:10+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: to_backdate
+#: model_terms:ir.ui.view,arch_db:to_backdate.abstract_inventory_backdate_wizard_form_view
+msgid "Backdate Operation Wizard"
+msgstr "Đồ thuật nhập Ngày trong Quá khứ"
+
+#. module: to_backdate
+#: model:res.groups,name:to_backdate.group_backdate
+msgid "Backdate Operations"
+msgstr "Cưỡng bức Ngày trong Quá khứ"
+
+#. module: to_backdate
+#: model_terms:ir.ui.view,arch_db:to_backdate.abstract_inventory_backdate_wizard_form_view
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: to_backdate
+#: model:ir.model.fields,field_description:to_backdate.field_abstract_inventory_backdate_wizard__date
+msgid "Date"
+msgstr "Ngày"
+
+#. module: to_backdate
+#: model:ir.model.fields,field_description:to_backdate.field_abstract_inventory_backdate_wizard__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: to_backdate
+#: model:ir.model.fields,field_description:to_backdate.field_abstract_inventory_backdate_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: to_backdate
+#: model:ir.model,name:to_backdate.model_abstract_inventory_backdate_wizard
+msgid "Inventory Backdate Wizard Abstract"
+msgstr ""
+
+#. module: to_backdate
+#: model:ir.model.fields,field_description:to_backdate.field_abstract_inventory_backdate_wizard____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối"
+
+#. module: to_backdate
+#: model:ir.model.fields,help:to_backdate.field_abstract_inventory_backdate_wizard__date
+msgid "The date and time at which the operation was actually done."
+msgstr "Ngày giờ mà tại đó hoạt động được hoàn thành thực tế."
+
+#. module: to_backdate
+#: code:addons/to_backdate/wizard/abstract_inventory_backdate_wizard.py:19
+#, python-format
+msgid "The method process() has not been implemented for the model %s. This could be a programming error..."
+msgstr "Phương thức process() chưa được triển khai cho model %s. Đây có thể là lỗi lập trình..."
+
+#. module: to_backdate
+#: model:res.groups,comment:to_backdate.group_backdate
+msgid "The user in this group will be able to do backdate operations. For example, validating a stock transfer of last week."
+msgstr "Người dùng thuộc nhóm này có thể nhập liệu cho các hoạt động với ngày thực hiện trong quá khứ. Ví dụ, xác nhận một phiếu kho mà thực tế đã hoàn thành từ tuần trước."
+
+#. module: to_backdate
+#: model_terms:ir.ui.view,arch_db:to_backdate.abstract_inventory_backdate_wizard_form_view
+msgid "Validate"
+msgstr "Xác nhận"
+
+#. module: to_backdate
+#: code:addons/to_backdate/wizard/abstract_inventory_backdate_wizard.py:16
+#, python-format
+msgid "You may not be able to specify a date in the future!"
+msgstr "Bạn không được phép chọn ngày trong tương lai!"
+

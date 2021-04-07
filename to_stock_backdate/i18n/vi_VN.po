@@ -1,0 +1,125 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* to_stock_backdate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-14 05:17+0000\n"
+"PO-Revision-Date: 2019-04-14 05:17+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_inventory_backdate_wizard__accounting_date
+msgid "Accounting Date"
+msgstr "Ngày Kế toán"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_scrap_backdate_wizard__date
+msgid "Actual Scrap Date"
+msgstr "Ngày thực tế chuyển thành Phế liệu"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_inventory_backdate_wizard__create_uid
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_scrap_backdate_wizard__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_inventory_backdate_wizard__create_date
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_scrap_backdate_wizard__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_inventory_backdate_wizard__display_name
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_scrap_backdate_wizard__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_inventory_backdate_wizard__id
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_scrap_backdate_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: to_stock_backdate
+#: model:ir.model,name:to_stock_backdate.model_stock_inventory
+msgid "Inventory"
+msgstr "Kiểm kho"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_inventory_backdate_wizard__inventory_id
+msgid "Inventory Adjustment"
+msgstr "Điều chỉnh Tồn kho"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_inventory_backdate_wizard__date
+msgid "Inventory Date"
+msgstr "Ngày kiểm kho"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_inventory_backdate_wizard____last_update
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_scrap_backdate_wizard____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_inventory_backdate_wizard__write_uid
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_scrap_backdate_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật Lần cuối Bởi"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_inventory_backdate_wizard__write_date
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_scrap_backdate_wizard__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,help:to_stock_backdate.field_stock_inventory_backdate_wizard__accounting_date
+msgid "Leave it empty to apply the Accounting Date specified on the Inventory Adjustment document, or the Inventory Date if the Accounting Date is not specified."
+msgstr "Để trống để sử dụng ngày được thiết lập ở trường Cưỡng bức Ngày Kế toán trên tài liệu Điều chỉnh Tồn kho, hoặc Ngày kiểm kho nếu trường Cưỡng bức Ngày Kế toán không có giá trị."
+
+#. module: to_stock_backdate
+#: model:ir.model,name:to_stock_backdate.model_stock_scrap
+msgid "Scrap"
+msgstr "Phế liệu"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_warn_insufficient_qty_scrap__scrap_backdate
+msgid "Scrap Backdate"
+msgstr "Lùi ngày Phế liệu"
+
+#. module: to_stock_backdate
+#: model:ir.model,name:to_stock_backdate.model_stock_inventory_backdate_wizard
+msgid "Stock Inventory Backdate Wizard"
+msgstr "Đồ thuật Kiểm kho Backdate"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,field_description:to_stock_backdate.field_stock_scrap_backdate_wizard__scrap_id
+msgid "Stock Scrap"
+msgstr ""
+
+#. module: to_stock_backdate
+#: model:ir.model,name:to_stock_backdate.model_stock_scrap_backdate_wizard
+msgid "Stock Scrap Backdate Wizard"
+msgstr "Đồ thuật Lùi ngày Phế liệu"
+
+#. module: to_stock_backdate
+#: model:ir.model.fields,help:to_stock_backdate.field_stock_inventory_backdate_wizard__date
+#: model:ir.model.fields,help:to_stock_backdate.field_stock_scrap_backdate_wizard__date
+msgid "The date and time at which the operation was actually done."
+msgstr "Ngày giờ mà tại đó hoạt động được hoàn thành thực tế."
+
+#. module: to_stock_backdate
+#: model:ir.model,name:to_stock_backdate.model_stock_warn_insufficient_qty_scrap
+msgid "Warn Insufficient Scrap Quantity"
+msgstr ""
+
